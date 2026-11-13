@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "handheld",
+  "name": "Handheld",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "light",
+  "description": "A pocket console look in four greens: everything on a dot-matrix screen in a pixel font, round A / B buttons, the mini player as the whole device. No console branding.",
+  "fonts": [
+    {
+      "family": "Press Start 2P",
+      "src": "assets/pressstart/PressStart2P-Regular.ttf"
+    }
+  ],
+  "tokens": {
+    "color.bg": "#9bbc0f",
+    "color.text": "#0f380f",
+    "color.text-dim": "#1f4a1f",
+    "color.text-strong": "#0f380f",
+    "color.text-soft": "#0f380f",
+    "color.text-muted": "#1f4a1f",
+    "color.surface": "#9bbc0f",
+    "color.border": "#306230",
+    "color.ink": "#0f380f",
+    "color.shade": "#1f4a1f",
+    "color.knob": "#9bbc0f",
+    "color.focus": "#0f380f",
+    "color.placeholder": "#306230",
+    "color.select-bg": "#8bac0f",
+    "color.mini-solid": "#9bbc0f",
+    "color.media-bg": "#9bbc0f",
+    "surface.menu": "#9bbc0f",
+    "surface.pop": "#9bbc0f",
+    "surface.drag": "#9bbc0f",
+    "surface.game": "#9bbc0f",
+    "surface.tip": "#9bbc0f",
+    "color.brand": "#0f380f",
+    "color.on-accent": "#9bbc0f",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0",
+    "shape.radius": "0px",
+    "shape.roundness": "0",
+    "font.body": "\"Press Start 2P\", monospace"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#0f380f"
+  },
+  "parts": {
+    "progress": {
+      "variant": "blocks"
+    },
+    "tracklist": {
+      "variant": "text"
+    },
+    "player": {
+      "variant": "text"
+    },
+    "nav": {
+      "variant": "text"
+    }
+  },
+  "supports": {
+    "background": [
+      "black"
+    ]
+  },
+  "strings": {
+    "brand": "POCKET",
+    "player.play": "A",
+    "player.next": ">",
+    "player.prev": "<",
+    "nowplaying.idle": "PRESS START",
+    "tab.queue": "LIST",
+    "tab.library": "SAVES",
+    "tab.search": "FIND",
+    "empty.queue": "NO DATA",
+    "nav.settings": "OPT",
+    "nav.explore": "MAP",
+    "nav.stats": "HI",
+    "nav.mini": "MINI"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "screen screen",
+        "prog prog",
+        "pad ab"
+      ],
+      "columns": "minmax(0, 1fr) minmax(0, 1fr)",
+      "rows": "minmax(0, 1fr) 40px 96px",
+      "place": {
+        "screen": "sidebar",
+        "prog": "progress",
+        "pad": "player",
+        "ab": "info"
+      }
+    },
+    "mini": {
+      "areas": [
+        "art meta",
+        "ctl ctl"
+      ],
+      "columns": "64px 1fr",
+      "rows": "64px auto",
+      "place": {
+        "art": "art",
+        "meta": "info",
+        "ctl": "player"
+      }
+    }
+  },
+  "css": "theme.css"
+}

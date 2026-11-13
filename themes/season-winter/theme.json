@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "season-winter",
+  "name": "Winter",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "A small seasonal theme: icy blue on deep navy and slow snowfall. Voltage underneath (the example of how small a theme can be).",
+  "tokens": {
+    "color.bg": "#060b16",
+    "color.brand": "#9fd8ff",
+    "color.border": "rgba(159, 216, 255, .25)",
+    "accent.album-mix": "0.25"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#9fd8ff"
+  },
+  "overlay": true,
+  "css": "theme.css"
+}

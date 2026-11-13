@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "cassette",
+  "name": "Cassette",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "An 80s tape deck: the cover on the cassette label with two reels turning in its window, the queue as a hand-written J-card, chunky piano-key buttons.",
+  "fonts": [
+    {
+      "family": "Caveat",
+      "src": "assets/caveat/Caveat.ttf",
+      "weight": "400 700"
+    }
+  ],
+  "tokens": {
+    "color.bg": "#16161a",
+    "color.text": "#efe9dd",
+    "color.text-dim": "#bdb6a8",
+    "color.text-strong": "#ffffff",
+    "color.text-soft": "#e6dfd2",
+    "color.text-muted": "#c8c1b3",
+    "color.surface": "rgba(36, 36, 42, .9)",
+    "color.border": "rgba(255, 255, 255, .12)",
+    "color.brand": "#ff6a3d",
+    "color.on-accent": "#16161a",
+    "color.knob": "#efe9dd",
+    "color.select-bg": "#3a2a24",
+    "surface.menu": "#222228",
+    "surface.pop": "#222228",
+    "surface.tip": "#222228",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0.2",
+    "shape.radius": "6px"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#ff6a3d"
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    },
+    "tracklist": {
+      "variant": "text"
+    }
+  },
+  "supports": {
+    "background": [
+      "black"
+    ]
+  },
+  "strings": {
+    "tab.queue": "Side A",
+    "tab.library": "Tapes",
+    "nowplaying.idle": "Insert a tape",
+    "empty.queue": "Side A is blank",
+    "player.prev": "REW",
+    "player.next": "FF"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "tape card",
+        "info card",
+        "prog card",
+        "keys card"
+      ],
+      "columns": "minmax(0, 1fr) minmax(260px, 340px)",
+      "rows": "minmax(0, 1fr) auto 40px 84px",
+      "place": {
+        "tape": "art",
+        "info": "info",
+        "prog": "progress",
+        "keys": "player",
+        "card": "sidebar"
+      },
+      "resizable": [
+        "card"
+      ]
+    }
+  },
+  "css": "theme.css"
+}

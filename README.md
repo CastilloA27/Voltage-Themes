@@ -29,6 +29,12 @@ store** reads. Themes contain no code; Voltage checks every file again when it i
 | Big & Clear | accessibility: big legible text, big buttons, contrast above 7:1 (measured 9.85), nothing moves | player first, list below |
 | Deep Space | a slow starfield, the cover as a planet with an orbit ring and a moon | planet + docked list |
 | Aquarium | teal water, rising bubbles, light ripples over the round cover | list + tank, controls on the sand |
+| Vinyl Lounge | walnut and brass: the cover as a spinning record, a tonearm that swings in on play | turntable + record crate |
+| Cassette | an 80s tape deck: the cover as the cassette label with turning reels, the queue as a hand-written J-card, piano keys | tape + J-card |
+| Handheld | a 4-green pocket console look (no console branding), pixel font, the mini player as the device | screen + buttons |
+| Night City | rain over neon, the title as a buzzing sign, a glitch on every track change | sign over cover + list |
+| Studio | a mixing desk: two VU meters (needles move with the music with the **VU meter** plugin), rack-mounted player | channel list + meters |
+| Halloween, Winter | tiny seasonal themes (a palette and an overlay on Voltage): how small a theme can be | Voltage's |
 
 Theme sources that aren't copies of Voltage-Plugins' examples are made by `tools/make-store.py`.
 

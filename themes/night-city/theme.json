@@ -1,0 +1,83 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "night-city",
+  "name": "Night City",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "Rain over neon: a magenta / cyan sign with the song title, rain streaks across the window, a glitch on every track change. The list as a lit shopfront.",
+  "fonts": [
+    {
+      "family": "Monoton",
+      "src": "assets/monoton/Monoton-Regular.ttf"
+    }
+  ],
+  "tokens": {
+    "color.bg": "#07040f",
+    "color.text": "#f0e6ff",
+    "color.text-dim": "#b8a8d8",
+    "color.text-strong": "#ffffff",
+    "color.text-soft": "#e0d4ff",
+    "color.text-muted": "#c4b6e4",
+    "color.surface": "rgba(20, 8, 36, .62)",
+    "color.border": "rgba(255, 60, 200, .3)",
+    "color.brand": "#ff3cc8",
+    "color.on-accent": "#07040f",
+    "color.knob": "#00f0ff",
+    "color.select-bg": "#3a0c40",
+    "surface.menu": "#140824",
+    "surface.pop": "#140824",
+    "surface.tip": "#140824",
+    "effect.blur": "12px",
+    "effect.glow-size": "18px",
+    "effect.glow-alpha": "55%",
+    "accent.album-mix": "0.15",
+    "shape.radius": "6px"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#ff3cc8"
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    },
+    "tracklist": {
+      "variant": "dense"
+    }
+  },
+  "supports": {
+    "background": [
+      "gradient"
+    ]
+  },
+  "overlay": true,
+  "strings": {
+    "nowplaying.idle": "The city is quiet tonight",
+    "tab.queue": "Tonight"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "sign sign",
+        "art list",
+        "prog list",
+        "bar list"
+      ],
+      "columns": "minmax(0, 1fr) minmax(260px, 340px)",
+      "rows": "120px minmax(0, 1fr) 44px 76px",
+      "place": {
+        "sign": "info",
+        "art": "art",
+        "list": "sidebar",
+        "prog": "progress",
+        "bar": "player"
+      },
+      "resizable": [
+        "list"
+      ]
+    }
+  },
+  "css": "theme.css"
+}

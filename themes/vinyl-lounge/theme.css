@@ -1,0 +1,26 @@
+[data-part="background"] { background-color: #1a0f08 !important; opacity: 1 !important;
+  background-image: repeating-linear-gradient(92deg, rgb(255 220 170 / .025) 0 3px, transparent 3px 11px), radial-gradient(80% 60% at 40% 30%, rgb(120 70 30 / .45), transparent 70%) !important; }
+.lay-area { backdrop-filter: none !important; box-shadow: none !important; }
+.lay-art { display: grid; place-items: center; min-height: 0; overflow: hidden; position: relative; }
+.lay-art .art-part { display: grid; grid-template: minmax(0, 1fr) / minmax(0, 1fr); place-items: center; width: 100%; height: 100%; min-height: 0; position: relative; }
+
+.lay-art, .lay-info, .lay-progress, .lay-player { background-color: transparent !important; border-color: transparent !important; }
+/* the plinth */
+.lay-art { margin: 10px; border-radius: 16px; background-image: linear-gradient(160deg, #5a3418, #3a200e) !important; box-shadow: inset 0 0 0 2px #d4aa64, 0 20px 40px rgb(0 0 0 / .5) !important; }
+/* the record: a black disc with grooves, the cover as its label */
+.lay-art { container-type: size; } /* on the cell: on .art-part it collapses to 0 wide (size containment) */
+.lay-art .art-part::before { content: ""; position: absolute; width: min(82cqw, 82cqh); aspect-ratio: 1; border-radius: 50%;
+  background-image: repeating-radial-gradient(circle, #111 0 2px, #1c1c1c 2px 3px), radial-gradient(circle, transparent 30%, rgb(255 255 255 / .06) 31%, transparent 60%);
+  box-shadow: 0 6px 18px rgb(0 0 0 / .7); }
+.lay-art img { width: min(32cqw, 32cqh) !important; height: auto !important; aspect-ratio: 1; object-fit: cover; border-radius: 50% !important; position: relative; z-index: 1;
+  animation: spin 1.8s linear infinite; }
+[data-part="app"]:not([data-state~="playing"]) .lay-art img { animation-play-state: paused; }
+@keyframes spin { to { transform: rotate(360deg); } }
+/* the tonearm: swings onto the record while playing */
+.lay-art::after { content: ""; position: absolute; right: 9%; top: 10%; width: 12px; height: 46%; border-radius: 6px; z-index: 2; transform-origin: 50% 6px;
+  background-image: linear-gradient(90deg, #b48a46, #f2d48c, #b48a46); box-shadow: 0 0 0 3px rgb(0 0 0 / .25); transform: rotate(-4deg); transition: transform .9s cubic-bezier(.3, .6, .3, 1); }
+[data-part="app"][data-state~="playing"] .lay-art::after { transform: rotate(24deg); }
+.lay-info [data-part="info.title"] { font-family: "DM Serif Display", Georgia, serif; font-size: 32px; font-weight: 400; color: #fff6e6; }
+[data-part="tracklist.row"][data-state~="active"] { background-color: rgb(212 170 100 / .16) !important; box-shadow: inset 3px 0 0 #d4aa64 !important; }
+[data-part="player.button.play"] { background-image: radial-gradient(circle at 40% 30%, #f2d48c, #b48a46) !important; color: #1a0f08 !important; }
+@media (prefers-reduced-motion: reduce) { .lay-art img { animation: none; } .lay-art::after { transition: none; } }

@@ -1,0 +1,26 @@
+[data-part="background"] { background-color: #07040f !important; opacity: 1 !important;
+  background-image: linear-gradient(0deg, rgb(255 60 200 / .25), transparent 30%), linear-gradient(0deg, rgb(0 240 255 / .12), transparent 55%),
+    repeating-linear-gradient(90deg, transparent 0 60px, rgb(255 255 255 / .02) 60px 62px) !important; }
+[data-part="overlay"] { background-image: url("assets/rain.svg"), url("assets/rain.svg"); background-size: 300px 600px, 200px 400px; animation: rain .9s linear infinite; opacity: .7; }
+@keyframes rain { to { background-position: -40px 600px, -30px 400px; } }
+[data-part="app"]:not([data-state~="playing"]) [data-part="overlay"] { animation-duration: 6s; }
+
+.lay-art { display: grid; place-items: center; min-height: 0; overflow: hidden; position: relative; }
+.lay-art .art-part { display: grid; grid-template: minmax(0, 1fr) / minmax(0, 1fr); place-items: center; width: 100%; height: 100%; min-height: 0; position: relative; }
+
+.lay-info, .lay-art { background-color: transparent !important; border-color: transparent !important; box-shadow: none !important; backdrop-filter: none !important; }
+/* the neon sign */
+.lay-info { display: grid; place-items: center; }
+.lay-info [data-part="info.title"] { font: 400 clamp(24px, 4vw, 46px) "Monoton", sans-serif; color: #ffd6f6; letter-spacing: .06em;
+  text-shadow: 0 0 6px #ff3cc8, 0 0 18px #ff3cc8, 0 0 40px #ff3cc8; animation: buzz 6s steps(1) infinite; }
+.lay-info .info-part > :not([data-part="info.title"]) { color: #b8fbff; text-shadow: 0 0 8px #00f0ff; }
+@keyframes buzz { 0%, 100% { opacity: 1; } 91% { opacity: 1; } 92% { opacity: .35; } 93% { opacity: 1; } 95% { opacity: .6; } 96% { opacity: 1; } }
+.lay-art img { width: auto !important; height: auto !important; max-width: 92% !important; max-height: 92% !important; aspect-ratio: 1; object-fit: cover;
+  box-shadow: 0 0 0 2px #00f0ff, 0 0 30px rgb(0 240 255 / .45) !important; }
+/* the glitch on a track change */
+:root[data-event="track-change"] .lay-art img, :root[data-event="skip"] .lay-art img { animation: glitch .55s steps(2); }
+:root[data-event="track-change"] .lay-info [data-part="info.title"], :root[data-event="skip"] .lay-info [data-part="info.title"] { animation: glitch .55s steps(2); }
+@keyframes glitch { 0% { transform: translate(0); filter: none; } 20% { transform: translate(-6px, 2px); filter: hue-rotate(90deg) saturate(2); clip-path: inset(10% 0 55% 0); }
+  40% { transform: translate(5px, -2px); clip-path: inset(50% 0 12% 0); } 60% { transform: translate(-3px, 0); filter: hue-rotate(-60deg); clip-path: none; } 100% { transform: none; filter: none; } }
+[data-part="tracklist.row"][data-state~="active"] { background-color: rgb(255 60 200 / .14) !important; box-shadow: inset 0 0 0 1px #ff3cc8, 0 0 14px rgb(255 60 200 / .35) !important; }
+@media (prefers-reduced-motion: reduce) { [data-part="overlay"], .lay-info [data-part="info.title"] { animation: none !important; } }

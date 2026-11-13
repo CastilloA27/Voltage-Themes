@@ -1,0 +1,33 @@
+[data-part="background"] { background-color: #121314 !important; opacity: 1 !important; background-image: repeating-linear-gradient(0deg, rgb(255 255 255 / .015) 0 2px, transparent 2px 6px) !important; }
+.lay-area { backdrop-filter: none !important; box-shadow: none !important; }
+.lay-art { display: grid; place-items: center; min-height: 0; overflow: hidden; position: relative; }
+.lay-art .art-part { display: grid; grid-template: minmax(0, 1fr) / minmax(0, 1fr); place-items: center; width: 100%; height: 100%; min-height: 0; position: relative; }
+
+.lay-area { background-color: #1c1d1f !important; border: 1px solid #2c2d30 !important; box-shadow: inset 0 1px 0 rgb(255 255 255 / .05) !important; }
+/* rack ears with screws on the player and the progress */
+.lay-player, .lay-progress { border-left: 18px solid #2a2b2e !important; border-right: 18px solid #2a2b2e !important;
+  background-image: radial-gradient(circle at 9px 50%, #777 0 3px, transparent 3.5px) !important; }
+/* the VU meters: two cream faces with an arc scale and a needle each; the needle follows --fx-vu (0-1, from the vu-meter helper) */
+.lay-art { background-color: #0d0d0e !important; container-type: size; }
+.lay-art img { display: none !important; }
+.lay-art .art-part { display: flex !important; flex-direction: row; justify-content: center; align-items: center; gap: 4%; }
+.lay-art .art-part::before, .lay-art .art-part::after { content: ""; width: min(44cqw, 120cqh); aspect-ratio: 1.6; border-radius: 6px;
+  background-color: #f1e6c8; box-shadow: inset 0 0 0 3px #3a3a3a, inset 0 0 30px rgb(160 120 40 / .35);
+  background-image:
+    conic-gradient(from calc(-50.65deg + var(--fx-vu, 0) * 100deg) at 50% 100%, #1a1a1a 0 1.3deg, transparent 1.3deg),
+    radial-gradient(circle at 50% 100%, transparent 0 58%, #1a1a1a 58.5% 59.5%, transparent 60%),
+    radial-gradient(circle at 50% 100%, transparent 0 58%, transparent 60%, rgb(200 40 30 / .7) 60% 62%, transparent 62.5%),
+    linear-gradient(transparent 80%, #1a1a1a 80% 81%, transparent 81%);
+  background-size: 100% 100%; background-repeat: no-repeat;
+  transition: background-image .1s; }
+.lay-art .art-part::after { background-image:
+    conic-gradient(from calc(-50.65deg + var(--fx-vu-r, var(--fx-vu, 0)) * 100deg) at 50% 100%, #1a1a1a 0 1.3deg, transparent 1.3deg),
+    radial-gradient(circle at 50% 100%, transparent 0 58%, #1a1a1a 58.5% 59.5%, transparent 60%),
+    radial-gradient(circle at 50% 100%, transparent 0 58%, transparent 60%, rgb(200 40 30 / .7) 60% 62%, transparent 62.5%),
+    linear-gradient(transparent 80%, #1a1a1a 80% 81%, transparent 81%); }
+.lay-info [data-part="info.title"] { font: 500 22px "IBM Plex Mono", monospace; letter-spacing: .06em; text-transform: uppercase; }
+.lay-info, [data-part="progress.time"], [data-part="tracklist"] { font-family: "IBM Plex Mono", Consolas, monospace; }
+/* the channel strips */
+[data-part="tracklist.row"] { border-left: 4px solid #2c2d30; border-radius: 0 !important; }
+[data-part="tracklist.row"][data-state~="active"] { border-left-color: #ffb02e; background-color: rgb(255 176 46 / .1) !important; box-shadow: none !important; }
+[data-part="player.button.play"] { background-color: #ffb02e !important; color: #121314 !important; border-radius: 4px !important; }

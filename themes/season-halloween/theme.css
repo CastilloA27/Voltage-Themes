@@ -1,0 +1,5 @@
+[data-part="overlay"] { background-image: radial-gradient(circle at 92% 8%, #ffe6b0 0 22px, rgb(255 200 120 / .25) 24px, transparent 60px),
+  radial-gradient(60% 20% at 30% 100%, rgb(255 255 255 / .06), transparent 70%), radial-gradient(50% 18% at 75% 100%, rgb(255 255 255 / .05), transparent 70%);
+  animation: fog 30s ease-in-out infinite alternate; }
+@keyframes fog { to { background-position: 0 0, 60px 0, -60px 0; } }
+[data-part="app"]:not([data-state~="playing"]) [data-part="overlay"] { animation-play-state: paused; }

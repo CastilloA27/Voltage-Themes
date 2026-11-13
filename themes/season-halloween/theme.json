@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "season-halloween",
+  "name": "Halloween",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "A small seasonal theme: pumpkin orange on black, a little moon and drifting fog. Voltage underneath (the example of how small a theme can be).",
+  "tokens": {
+    "color.bg": "#0b0806",
+    "color.brand": "#ff7a1a",
+    "color.border": "rgba(255, 122, 26, .25)",
+    "accent.album-mix": "0.2"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#ff7a1a"
+  },
+  "overlay": true,
+  "css": "theme.css"
+}

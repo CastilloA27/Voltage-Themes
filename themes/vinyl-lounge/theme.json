@@ -1,0 +1,83 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "vinyl-lounge",
+  "name": "Vinyl Lounge",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "Walnut and brass: the cover as a spinning record on a turntable, a tonearm that swings in on play and out on pause, the queue as a record crate.",
+  "fonts": [
+    {
+      "family": "DM Serif Display",
+      "src": "assets/dmserif/DMSerifDisplay-Regular.ttf"
+    }
+  ],
+  "tokens": {
+    "color.bg": "#1a0f08",
+    "color.text": "#f4e6d0",
+    "color.text-dim": "#cdb79a",
+    "color.text-strong": "#fff6e6",
+    "color.text-soft": "#ead8bc",
+    "color.text-muted": "#d6c0a2",
+    "color.surface": "rgba(52, 30, 16, .7)",
+    "color.border": "rgba(212, 170, 100, .3)",
+    "color.brand": "#d4aa64",
+    "color.on-accent": "#1a0f08",
+    "color.knob": "#e8cc90",
+    "color.select-bg": "#4a2c14",
+    "surface.menu": "#2a180c",
+    "surface.pop": "#2a180c",
+    "surface.tip": "#2a180c",
+    "effect.blur": "0px",
+    "effect.glow-size": "8px",
+    "effect.glow-alpha": "25%",
+    "accent.album-mix": "0.15",
+    "shape.radius": "10px"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#d4aa64"
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    },
+    "tracklist": {
+      "variant": "dense"
+    }
+  },
+  "supports": {
+    "background": [
+      "gradient"
+    ]
+  },
+  "strings": {
+    "tab.queue": "Crate",
+    "nowplaying.idle": "Put a record on",
+    "empty.queue": "The crate is empty"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "deck crate",
+        "info crate",
+        "prog crate",
+        "bar crate"
+      ],
+      "columns": "minmax(0, 1fr) minmax(260px, 340px)",
+      "rows": "minmax(0, 1fr) auto 44px 76px",
+      "place": {
+        "deck": "art",
+        "info": "info",
+        "prog": "progress",
+        "bar": "player",
+        "crate": "sidebar"
+      },
+      "resizable": [
+        "crate"
+      ]
+    }
+  },
+  "css": "theme.css"
+}

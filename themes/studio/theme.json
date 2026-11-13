@@ -1,0 +1,85 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "studio",
+  "name": "Studio",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "A mixing desk: two VU meters whose needles move with the music (with the VU meter plugin), a rack-mounted player, the queue as a channel list.",
+  "fonts": [
+    {
+      "family": "IBM Plex Mono",
+      "src": "assets/plexmono/IBMPlexMono-Regular.ttf"
+    }
+  ],
+  "plugin": "vu-meter",
+  "tokens": {
+    "color.bg": "#121314",
+    "color.text": "#e8e8e2",
+    "color.text-dim": "#aaaaa2",
+    "color.text-strong": "#ffffff",
+    "color.text-soft": "#dcdcd4",
+    "color.text-muted": "#b8b8b0",
+    "color.surface": "#1c1d1f",
+    "color.border": "rgba(255, 255, 255, .1)",
+    "color.brand": "#ffb02e",
+    "color.on-accent": "#121314",
+    "color.knob": "#e8e8e2",
+    "color.select-bg": "#3a2e18",
+    "surface.menu": "#1c1d1f",
+    "surface.pop": "#1c1d1f",
+    "surface.tip": "#1c1d1f",
+    "effect.blur": "0px",
+    "effect.glow-size": "6px",
+    "effect.glow-alpha": "30%",
+    "accent.album-mix": "0",
+    "shape.radius": "4px",
+    "font.mono": "\"IBM Plex Mono\", Consolas, monospace"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#ffb02e"
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    },
+    "tracklist": {
+      "variant": "dense"
+    }
+  },
+  "supports": {
+    "background": [
+      "black"
+    ]
+  },
+  "strings": {
+    "tab.queue": "Channels",
+    "nowplaying.idle": "Desk idle",
+    "empty.queue": "No channels armed"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "strip vu",
+        "strip info",
+        "strip prog",
+        "strip bar"
+      ],
+      "columns": "minmax(260px, 330px) minmax(0, 1fr)",
+      "rows": "minmax(160px, 1fr) auto 44px 80px",
+      "place": {
+        "strip": "sidebar",
+        "vu": "art",
+        "info": "info",
+        "prog": "progress",
+        "bar": "player"
+      },
+      "resizable": [
+        "strip"
+      ]
+    }
+  },
+  "css": "theme.css"
+}

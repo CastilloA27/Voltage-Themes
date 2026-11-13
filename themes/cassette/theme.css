@@ -1,0 +1,29 @@
+[data-part="background"] { background-color: #16161a !important; background-image: none !important; opacity: 1 !important; }
+.lay-area { backdrop-filter: none !important; box-shadow: none !important; }
+.lay-art { display: grid; place-items: center; min-height: 0; overflow: hidden; position: relative; }
+.lay-art .art-part { display: grid; grid-template: minmax(0, 1fr) / minmax(0, 1fr); place-items: center; width: 100%; height: 100%; min-height: 0; position: relative; }
+
+.lay-art, .lay-info, .lay-progress { background-color: transparent !important; border-color: transparent !important; }
+/* the cassette shell, the label (the cover), the window with two reels */
+.lay-art { container-type: size; } /* on the cell: on .art-part it collapses to 0 wide (size containment) */
+.lay-art .art-part::before { content: ""; position: absolute; width: min(92cqw, 150cqh); aspect-ratio: 1.6; border-radius: 14px;
+  background-image: linear-gradient(#2a2a30, #1d1d22); box-shadow: inset 0 0 0 3px #3a3a42, 0 18px 40px rgb(0 0 0 / .6); }
+.lay-art img { width: min(80cqw, 130cqh) !important; height: auto !important; aspect-ratio: 2.4; object-fit: cover; border-radius: 6px !important; position: relative; z-index: 1;
+  -webkit-mask-image: radial-gradient(ellipse 25% 30% at 50% 52%, transparent 98%, #000 100%); mask-image: radial-gradient(ellipse 25% 30% at 50% 52%, transparent 98%, #000 100%); }
+.lay-art .art-part::after { content: ""; position: absolute; z-index: 2; width: min(26cqw, 42cqh); aspect-ratio: 2.2;
+  background-image: radial-gradient(circle at 28% 50%, #efe9dd 0 8%, #3a2a20 9% 26%, transparent 27%), radial-gradient(circle at 72% 50%, #efe9dd 0 8%, #3a2a20 9% 18%, transparent 19%);
+  animation: reels 1.2s steps(6) infinite; }
+@keyframes reels { 50% { filter: brightness(1.15); } }
+[data-part="app"]:not([data-state~="playing"]) .lay-art .art-part::after { animation-play-state: paused; }
+/* the J-card: hand-written on lined card */
+[data-part="tracklist"] { background-color: #f6efe0 !important; background-image: linear-gradient(rgb(60 90 160 / .18) 1px, transparent 1px) !important; background-size: 100% 28px !important; }
+[data-part="tracklist"] * { color: #1e2a4a !important; }
+[data-part="tracklist.row"] { font: 600 19px "Caveat", "Segoe Print", cursive !important; padding-top: 1px !important; padding-bottom: 1px !important; }
+[data-part="tracklist.row"][data-state~="active"] { background-color: rgb(255 106 61 / .18) !important; box-shadow: none !important; }
+.lay-info [data-part="info.title"] { font: 700 34px "Caveat", cursive; color: #efe9dd; }
+/* piano keys */
+.lay-player .btn, [data-part^="player.button"] { border-radius: 4px !important; background-image: linear-gradient(#f2f2f2, #c8c8c8) !important; color: #222 !important; border: 0 !important;
+  box-shadow: inset 0 -5px 0 #8a8a8a, 0 3px 0 #111 !important; min-width: 54px !important; min-height: 44px !important; }
+.lay-player .controls { gap: 8px !important; }
+[data-part="player.button.play"] { background-image: linear-gradient(#ff8a63, #e0502a) !important; color: #fff !important; box-shadow: inset 0 -5px 0 #a33a1c, 0 3px 0 #111 !important; }
+@media (prefers-reduced-motion: reduce) { .lay-art .art-part::after { animation: none; } }

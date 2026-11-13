@@ -190,3 +190,5 @@ write('retro-desktop', {
 # the second batch
 spec = importlib.util.spec_from_file_location('make_store_2', Path(__file__).resolve().parent / 'make-store-2.py')
 spec.loader.exec_module(importlib.util.module_from_spec(spec))
+spec = importlib.util.spec_from_file_location('make_store_3', Path(__file__).resolve().parent / 'make-store-3.py')
+spec.loader.exec_module(importlib.util.module_from_spec(spec))
