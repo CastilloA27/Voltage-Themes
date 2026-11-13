@@ -1,0 +1,31 @@
+.lay-area { backdrop-filter: none !important; box-shadow: none !important; }
+.lay-area { background-color: #ffffff !important; border: 0 !important; border-bottom: 1px solid #d4d4d4 !important; border-radius: 0 !important; }
+[data-part="titlebar"] { background-color: #1e7145; color: #ffffff; }
+[data-part="titlebar.brand"] { color: #ffffff; font-weight: 600; }
+[data-part="titlebar"] button { color: #ffffff !important; }
+/* the toolbar */
+.lay-player { background-color: #f3f3f3 !important; justify-content: flex-start !important; }
+/* the formula bar: fx | =PLAY("song") */
+.lay-info { display: flex; align-items: center; padding: 0 0 0 46px !important; position: relative; text-align: left; }
+.lay-info::before { content: "fx"; position: absolute; left: 0; top: 0; bottom: 0; width: 38px; display: grid; place-items: center; font: italic 13px Georgia, serif; color: #5c5c5c; border-right: 1px solid #d4d4d4; }
+.lay-info [data-part="info.title"] { font: 13px Consolas, "Cascadia Mono", monospace; color: #1f1f1f; }
+.lay-info [data-part="info.title"]::before { content: '=PLAY("'; color: #1e7145; }
+.lay-info [data-part="info.title"]::after { content: '")'; color: #1e7145; }
+.lay-info { overflow: hidden; }
+.lay-info .info-part { display: flex !important; flex-direction: row !important; align-items: center; gap: 14px; width: 100%; white-space: nowrap; }
+.lay-info .info-part > :not([data-part="info.title"]) { font-size: 12px; color: #4a4a4a; }
+.lay-info [data-part="info.title"] { margin: 0; overflow: hidden; text-overflow: ellipsis; }
+.lay-info .btn { width: 22px !important; height: 22px !important; }
+[data-part="tracklist.row.artist"], [data-part="tracklist.row.time"] { color: #4a4a4a !important; opacity: 1; }
+/* the sheet: column letters, row numbers, cell borders, a selected-cell box on the playing row */
+.lay-tracklist { padding: 0 !important; }
+.lay-tracklist [data-part="tracklist"] { counter-reset: row; background-image: linear-gradient(#f3f3f3, #f3f3f3); background-size: 40px 100%; background-repeat: no-repeat; }
+.lay-tracklist [data-part="tracklist"]::before { content: "          A                                      B                         C                D"; display: block; white-space: pre; height: 22px; line-height: 22px;
+  font: 12px "Segoe UI", sans-serif; color: #5c5c5c; background-color: #f3f3f3; border-bottom: 1px solid #d4d4d4; position: sticky; top: 0; z-index: 1; }
+[data-part="tracklist.row"] { counter-increment: row; border-radius: 0 !important; border-bottom: 1px solid #e3e3e3; padding: 4px 8px 4px 48px !important; position: relative; }
+[data-part="tracklist.row"]::before { content: counter(row); position: absolute; left: 0; top: 0; bottom: 0; width: 40px; display: grid; place-items: center; font-size: 11.5px; color: #5c5c5c; border-right: 1px solid #d4d4d4; }
+[data-part="tracklist.row"]:hover { background-color: #f3f9f5 !important; }
+[data-part="tracklist.row"][data-state~="active"] { background-color: #ffffff !important; box-shadow: inset 0 0 0 2px #1e7145 !important; }
+[data-part="tracklist.row.title"] { font-weight: 400 !important; }
+/* the status bar */
+.lay-progress { background-color: #f3f3f3 !important; font-size: 12px; }

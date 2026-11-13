@@ -15,6 +15,19 @@ store** reads. Themes contain no code; Voltage checks every file again when it i
   themselves.
 - The nine bundled themes ship inside Voltage's installer too, and get fixes from here without an app update.
 
+## The themes
+
+| Theme | Idea | Layout |
+|---|---|---|
+| Terminal, CRT green, Pastel goth, Sidebar, Frosted light, Jackpot, Paper, Tactical, Sumi Ink | the nine that ship with Voltage | each its own |
+| Voltage (starter) | Voltage's own look with every value written out: the template to copy | Voltage's |
+| Spreadsheet | stealth mode: a plain-looking sheet (formula bar with the song, numbered rows, a status bar) | toolbar / formula bar / sheet |
+| Blueprint | blue grid paper, the cover as a drawing with a dimension line, a title block | parts list / drawing / title block |
+| E-ink | grey on paper, nothing moves, no blur: the cheapest theme to draw (2.4% of a core playing vs 17.6% for Voltage's, measured) | page header / list |
+| Retro Desktop | late-90s windows (generic, no OS logos): bevels, a title bar on every panel, a taskbar along the bottom | windows + taskbar |
+
+Theme sources that aren't copies of Voltage-Plugins' examples are made by `tools/make-store.py`.
+
 ## Adding a theme
 
 1. A pull request adds `themes/<id>/` (the folder name is the theme's `id`) and `previews/<id>-1.png` (+ `-2.png`), 1280 x 800,

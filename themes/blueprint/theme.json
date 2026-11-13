@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "blueprint",
+  "name": "Blueprint",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "A drafting sheet: blue grid paper, white lines, the cover as the drawing with a dimension line, a title block in the corner.",
+  "fonts": [
+    {
+      "family": "Architects Daughter",
+      "src": "assets/architects/ArchitectsDaughter-Regular.ttf"
+    },
+    {
+      "family": "IBM Plex Mono",
+      "src": "assets/plexmono/IBMPlexMono-Regular.ttf"
+    }
+  ],
+  "tokens": {
+    "color.bg": "#0b3c8c",
+    "color.text": "#f2f6ff",
+    "color.text-dim": "#c4d4f4",
+    "color.text-strong": "#ffffff",
+    "color.text-soft": "#e6eeff",
+    "color.text-muted": "#c4d4f4",
+    "color.surface": "rgba(11, 60, 140, .55)",
+    "color.border": "rgba(255, 255, 255, .7)",
+    "color.brand": "#ffffff",
+    "color.on-accent": "#0b3c8c",
+    "color.knob": "#ffffff",
+    "color.select-bg": "#1a4fa8",
+    "surface.menu": "#0d438f",
+    "surface.pop": "#0d438f",
+    "surface.tip": "#0d438f",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0",
+    "shape.radius": "0px",
+    "shape.roundness": "0",
+    "font.mono": "\"IBM Plex Mono\", Consolas, monospace"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#ffffff"
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    },
+    "tracklist": {
+      "variant": "dense"
+    }
+  },
+  "supports": {
+    "background": [
+      "gradient"
+    ]
+  },
+  "strings": {
+    "tab.search": "Search",
+    "tab.library": "Drawings",
+    "tab.queue": "Parts list",
+    "nowplaying.idle": "No drawing loaded",
+    "empty.queue": "Parts list empty"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "list draw draw",
+        "list draw draw",
+        "list prog block",
+        "list bar block"
+      ],
+      "columns": "minmax(240px, 320px) minmax(0, 1fr) minmax(220px, 300px)",
+      "rows": "minmax(0, 1fr) minmax(0, 1fr) 48px 76px",
+      "place": {
+        "list": "sidebar",
+        "draw": "art",
+        "block": "info",
+        "prog": "progress",
+        "bar": "player"
+      },
+      "resizable": [
+        "list"
+      ],
+      "below": {
+        "900px": {
+          "areas": [
+            "draw block",
+            "prog prog",
+            "bar bar",
+            "list list"
+          ],
+          "columns": "1fr 1fr",
+          "rows": "minmax(0, 1fr) 48px 76px minmax(0, 1fr)",
+          "place": {
+            "draw": "art",
+            "block": "info",
+            "prog": "progress",
+            "bar": "player",
+            "list": "sidebar"
+          }
+        }
+      }
+    }
+  },
+  "css": "theme.css"
+}

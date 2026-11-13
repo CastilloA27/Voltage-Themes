@@ -1,0 +1,93 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "e-ink",
+  "name": "E-ink",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "light",
+  "description": "Grey on paper like an e-reader: a page header with a small cover, the list as the page. No animation, no blur, no glow.",
+  "tokens": {
+    "color.bg": "#e9e7e1",
+    "color.text": "#202020",
+    "color.text-dim": "#4a4a4a",
+    "color.text-strong": "#202020",
+    "color.text-soft": "#202020",
+    "color.text-muted": "#4a4a4a",
+    "color.surface": "#e9e7e1",
+    "color.border": "#b9b6ae",
+    "color.ink": "#202020",
+    "color.shade": "#4a4a4a",
+    "color.knob": "#e9e7e1",
+    "color.focus": "#202020",
+    "color.placeholder": "#b9b6ae",
+    "color.select-bg": "#b9b6ae",
+    "color.mini-solid": "#e9e7e1",
+    "color.media-bg": "#e9e7e1",
+    "surface.menu": "#e9e7e1",
+    "surface.pop": "#e9e7e1",
+    "surface.drag": "#e9e7e1",
+    "surface.game": "#e9e7e1",
+    "surface.tip": "#e9e7e1",
+    "color.brand": "#202020",
+    "color.on-accent": "#e9e7e1",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0",
+    "shape.radius": "0px",
+    "shape.roundness": "0",
+    "font.body": "Georgia, \"Times New Roman\", serif"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#202020"
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    },
+    "tracklist": {
+      "variant": "dense"
+    },
+    "player": {
+      "variant": "compact"
+    }
+  },
+  "supports": {
+    "background": [
+      "black"
+    ],
+    "miniSkin": [
+      "classic"
+    ]
+  },
+  "holidays": false,
+  "strings": {
+    "nowplaying.idle": "Nothing open",
+    "empty.queue": "This page is blank",
+    "tab.queue": "Contents",
+    "tab.library": "Shelf",
+    "tab.search": "Find"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "cover head",
+        "prog prog",
+        "bar bar",
+        "list list"
+      ],
+      "columns": "132px minmax(0, 1fr)",
+      "rows": "132px 40px 60px minmax(0, 1fr)",
+      "place": {
+        "cover": "art",
+        "head": "info",
+        "prog": "progress",
+        "bar": "player",
+        "list": "sidebar"
+      }
+    }
+  },
+  "css": "theme.css"
+}

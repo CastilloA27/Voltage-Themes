@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "retro-desktop",
+  "name": "Retro Desktop",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "light",
+  "description": "Late-90s desktop windows: grey bevels, blue title bars on every panel, a teal desktop, the title bar as a taskbar along the bottom.",
+  "tokens": {
+    "color.bg": "#008080",
+    "color.text": "#000000",
+    "color.text-dim": "#3a3a3a",
+    "color.text-strong": "#000000",
+    "color.text-soft": "#000000",
+    "color.text-muted": "#3a3a3a",
+    "color.surface": "#c0c0c0",
+    "color.border": "#808080",
+    "color.ink": "#000000",
+    "color.shade": "#3a3a3a",
+    "color.knob": "#c0c0c0",
+    "color.focus": "#000000",
+    "color.placeholder": "#808080",
+    "color.select-bg": "#808080",
+    "color.mini-solid": "#008080",
+    "color.media-bg": "#c0c0c0",
+    "surface.menu": "#c0c0c0",
+    "surface.pop": "#c0c0c0",
+    "surface.drag": "#c0c0c0",
+    "surface.game": "#008080",
+    "surface.tip": "#c0c0c0",
+    "color.brand": "#000080",
+    "color.on-accent": "#ffffff",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0",
+    "shape.radius": "0px",
+    "shape.roundness": "0",
+    "font.body": "Tahoma, \"MS Sans Serif\", Verdana, sans-serif"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#000080"
+  },
+  "parts": {
+    "progress": {
+      "variant": "blocks"
+    },
+    "tracklist": {
+      "variant": "dense"
+    },
+    "player": {
+      "variant": "compact"
+    }
+  },
+  "supports": {
+    "background": [
+      "black"
+    ]
+  },
+  "strings": {
+    "nowplaying.idle": "Media Player: no file open",
+    "empty.queue": "Playlist is empty",
+    "tab.queue": "Playlist",
+    "tab.library": "My Music",
+    "tab.search": "Find"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "list art info",
+        "list art info",
+        "list prog prog",
+        "list bar bar",
+        "task task task"
+      ],
+      "columns": "minmax(240px, 330px) minmax(0, 1fr) minmax(220px, 300px)",
+      "rows": "minmax(0, 1fr) minmax(0, 1fr) 54px 72px 36px",
+      "place": {
+        "list": "sidebar",
+        "art": "art",
+        "info": "info",
+        "bar": "player",
+        "prog": "progress",
+        "task": "titlebar"
+      },
+      "resizable": [
+        "list"
+      ]
+    }
+  },
+  "css": "theme.css"
+}

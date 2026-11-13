@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "spreadsheet",
+  "name": "Spreadsheet",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "light",
+  "description": "Stealth mode: a plain-looking sheet. The controls in a toolbar, the song in the formula bar, numbered rows, a status bar.",
+  "tokens": {
+    "color.bg": "#ffffff",
+    "color.text": "#1f1f1f",
+    "color.text-dim": "#5c5c5c",
+    "color.text-strong": "#1f1f1f",
+    "color.text-soft": "#1f1f1f",
+    "color.text-muted": "#5c5c5c",
+    "color.surface": "#ffffff",
+    "color.border": "#d4d4d4",
+    "color.ink": "#1f1f1f",
+    "color.shade": "#5c5c5c",
+    "color.knob": "#ffffff",
+    "color.focus": "#1f1f1f",
+    "color.placeholder": "#d4d4d4",
+    "color.select-bg": "#d4d4d4",
+    "color.mini-solid": "#ffffff",
+    "color.media-bg": "#ffffff",
+    "surface.menu": "#ffffff",
+    "surface.pop": "#ffffff",
+    "surface.drag": "#ffffff",
+    "surface.game": "#ffffff",
+    "surface.tip": "#ffffff",
+    "color.brand": "#1e7145",
+    "color.on-accent": "#ffffff",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0",
+    "shape.radius": "0px",
+    "shape.roundness": "0",
+    "font.body": "\"Segoe UI\", Calibri, Arial, sans-serif"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#1e7145"
+  },
+  "parts": {
+    "tracklist": {
+      "variant": "table"
+    },
+    "art": {
+      "variant": "none"
+    },
+    "progress": {
+      "variant": "line"
+    },
+    "player": {
+      "variant": "compact"
+    },
+    "nav": {
+      "variant": "text"
+    }
+  },
+  "supports": {
+    "background": [
+      "black"
+    ]
+  },
+  "strings": {
+    "brand": "Book1",
+    "tab.search": "Query",
+    "tab.library": "Data",
+    "tab.queue": "Sheet1",
+    "search.placeholder": "Find (Ctrl+F)",
+    "nowplaying.idle": "Ready",
+    "empty.queue": "Sheet1 is empty",
+    "nav.settings": "Options",
+    "nav.explore": "Insert",
+    "nav.stats": "Review",
+    "nav.mini": "View"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "ctl find",
+        "fx fx",
+        "list list",
+        "prog prog"
+      ],
+      "columns": "minmax(0, 1fr) minmax(220px, 340px)",
+      "rows": "46px 32px minmax(0, 1fr) 32px",
+      "place": {
+        "ctl": "player",
+        "find": "search",
+        "fx": "info",
+        "list": "tracklist",
+        "prog": "progress"
+      },
+      "below": {
+        "700px": {
+          "areas": [
+            "ctl",
+            "fx",
+            "list",
+            "prog"
+          ],
+          "columns": "1fr",
+          "rows": "46px 32px minmax(0, 1fr) 32px",
+          "place": {
+            "ctl": "player",
+            "fx": "info",
+            "list": "tracklist",
+            "prog": "progress"
+          }
+        }
+      }
+    }
+  },
+  "css": "theme.css"
+}
