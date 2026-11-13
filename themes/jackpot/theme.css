@@ -1,0 +1,119 @@
+/* the backdrop: the arcane palette, never the album's colours (supports.background is gradient only) */
+[data-part="background"] { background-color: #07061a !important; opacity: 1 !important;
+  background-image: radial-gradient(120% 90% at 15% 0%, rgb(90 40 200 / .45), transparent 62%), radial-gradient(100% 100% at 100% 100%, rgb(0 170 230 / .3), transparent 58%), radial-gradient(60% 50% at 50% 55%, rgb(200 40 220 / .12), transparent 70%) !important; }
+
+/* marquee lettering */
+[data-part="titlebar.brand"], [data-part="info.title"], .for-you-title { font-family: "Bungee", "Bahnschrift", sans-serif; letter-spacing: .04em; }
+[data-part="titlebar.brand"] { color: #00e5ff; text-shadow: 0 0 10px rgb(0 210 255 / .7); }
+[data-part="info.title"] { color: #ffd700; text-shadow: 0 0 14px rgb(112 0 255 / .8), 0 2px 0 #3a1d7a; }
+
+/* one symbol's size: 180 px, smaller on short windows so the whole cabinet fits (1366 x 768: ~146 px) */
+:root { --reel: clamp(96px, calc((100vh - 330px) / 3), 180px); }
+/* the screen: five reels of symbols (one strip image, each reel at its own offset); the cover is the centre symbol */
+.lay-view-nowplaying { column-gap: 0; }
+.lay-view-nowplaying [data-cell^="slot:reel"], .lay-view-nowplaying [data-cell="art"] {
+  /* longhands: a shorthand mixing var() with other background properties doesn't survive the cleaner */
+  background-image: url("assets/reel.svg"); background-size: var(--reel) calc(var(--reel) * 8); background-repeat: repeat-y; background-position-x: 0; background-position-y: var(--o); position: relative; overflow: hidden;
+  border-top: 5px solid #d4af37; border-bottom: 5px solid #d4af37;
+  box-shadow: inset 0 26px 30px -10px rgb(0 0 0 / .75), inset 0 -26px 30px -10px rgb(0 0 0 / .75), inset -1px 0 0 #2c2350, 0 0 26px rgb(0 210 255 / .25); }
+.lay-view-nowplaying [data-cell="slot:reel1"] { --o: calc(var(--fx-roll-1, 0) * var(--reel) * -1); border-radius: 16px 0 0 16px; border-left: 5px solid #d4af37; }
+.lay-view-nowplaying [data-cell="slot:reel2"] { --o: calc(var(--fx-roll-2, 3) * var(--reel) * -1); }
+.lay-view-nowplaying [data-cell="art"] { --o: calc(var(--fx-roll-3, 5) * var(--reel) * -1); padding: var(--reel) 0; display: block; }
+.lay-view-nowplaying [data-cell="slot:reel4"] { --o: calc(var(--fx-roll-4, 2) * var(--reel) * -1); }
+.lay-view-nowplaying [data-cell="slot:reel5"] { --o: calc(var(--fx-roll-5, 7) * var(--reel) * -1); border-radius: 0 16px 16px 0; border-right: 5px solid #d4af37; }
+.lay-view-nowplaying [data-cell="art"] .art-part { display: block; width: var(--reel); height: var(--reel); }
+.lay-view-nowplaying [data-cell="art"] img { width: var(--reel) !important; height: var(--reel) !important; max-width: none; border-radius: 0; object-fit: cover;
+  box-shadow: inset 0 0 0 4px #00d2ff, 0 0 24px rgb(0 210 255 / .6); }
+
+/* nothing playing: a dimmed reel strip drifts behind INSERT A SONG */
+[data-part="nowplaying.idle"] { position: relative; width: min(100%, 900px); padding: 40px 0; border-top: 5px solid #d4af37; border-bottom: 5px solid #d4af37; overflow: hidden;
+  background-image: url("assets/reel.svg"); background-size: 120px 960px; background-repeat: repeat; background-position: 0 0;
+  animation: idle-drift 24s linear infinite; }
+[data-part="nowplaying.idle"]::before { content: ""; position: absolute; inset: 0; background-color: rgb(7 6 26 / .78); }
+[data-part="nowplaying.idle"] > * { position: relative; }
+[data-part="nowplaying.idle"] .logo { font-family: "Bungee", sans-serif; color: #ffd700; text-shadow: 0 0 18px rgb(112 0 255 / .9), 0 3px 0 #3a1d7a; }
+[data-part="nowplaying.idle"] p { font-family: "Bungee", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #00e5ff; opacity: 1;
+  animation: idle-blink 1.4s steps(2) infinite; }
+@keyframes idle-drift { to { background-position: 0 960px; } }
+@keyframes idle-blink { 50% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { [data-part="nowplaying.idle"], [data-part="nowplaying.idle"] p { animation: none; } }
+
+/* three reels under 1100 px: the gold frame closes on reels 2 and 4 */
+@media (max-width: 1100px) {
+  .lay-view-nowplaying [data-cell="slot:reel2"] { border-radius: 16px 0 0 16px; border-left: 5px solid #d4af37; }
+  .lay-view-nowplaying [data-cell="slot:reel4"] { border-radius: 0 16px 16px 0; border-right: 5px solid #d4af37; }
+}
+
+/* a new song: the five reels spin and stop left to right */
+@keyframes spin-reel { from { background-position-y: calc(var(--o) - var(--reel) * 16); filter: blur(2px); } 85% { filter: blur(0); } to { background-position-y: var(--o); } }
+@keyframes spin-cover { 0% { transform: translateY(-140%); filter: blur(5px); } 75% { transform: translateY(5%); filter: blur(0); } 100% { transform: none; } }
+:root[data-event="track-change"] [data-cell^="slot:reel"], :root[data-event="skip"] [data-cell^="slot:reel"], :root[data-event="previous"] [data-cell^="slot:reel"],
+:root[data-event="track-change"] [data-cell="art"], :root[data-event="skip"] [data-cell="art"], :root[data-event="previous"] [data-cell="art"] { animation: spin-reel .5s cubic-bezier(.15, .7, .3, 1) both; }
+:root[data-event] [data-cell="slot:reel2"] { animation-duration: .65s !important; }
+:root[data-event] [data-cell="art"] { animation-duration: .8s !important; }
+:root[data-event] [data-cell="slot:reel4"] { animation-duration: .95s !important; }
+:root[data-event] [data-cell="slot:reel5"] { animation-duration: 1.1s !important; }
+:root[data-event="track-change"] [data-cell="art"] img, :root[data-event="skip"] [data-cell="art"] img, :root[data-event="previous"] [data-cell="art"] img { animation: spin-cover .8s cubic-bezier(.15, .7, .3, 1); }
+
+/* a like: the middle payline lights across all five reels, coins rain, BIG WIN */
+.lay-view-nowplaying [data-cell^="slot:reel"]::after, .lay-view-nowplaying [data-cell="art"]::after { content: ""; position: absolute; left: 0; right: 0; top: calc(50% - 3px); height: 6px;
+  background: linear-gradient(90deg, #00f2fe, #f093fb, #00f2fe); box-shadow: 0 0 14px 4px rgb(0 210 255 / .8); opacity: 0; pointer-events: none; }
+:root[data-event="like"] [data-cell^="slot:reel"]::after, :root[data-event="like"] [data-cell="art"]::after { animation: payline 1.2s ease-out; }
+@keyframes payline { 10%, 30%, 50%, 70% { opacity: 1; } 20%, 40%, 60% { opacity: .3; } 100% { opacity: 0; } }
+
+/* marquee bulbs: real bulbs (glass, gold socket, halo) in the margins outside the panels, framing the window like a
+   cabinet; nothing crosses the title bar. Four-bulb pattern (cyan, dark, violet, dark) moved one bulb per step = a chase. */
+[data-part="overlay"] {
+  /* the two bottom corners: a gold rivet over the spot where a column meets the row */
+  background-image: radial-gradient(circle, #d4af37 0 2.5px, #0d0a1f 3.5px), radial-gradient(circle, #d4af37 0 2.5px, #0d0a1f 3.5px), url("assets/bulbs-h.svg"), url("assets/bulbs-v.svg"), url("assets/bulbs-v.svg");
+  background-repeat: no-repeat, no-repeat, repeat-x, repeat-y, repeat-y;
+  background-size: 16px 16px, 16px 16px, 64px 16px, 16px 64px, 16px 64px;
+  background-position: -1px calc(100% + 1px), calc(100% + 1px) calc(100% + 1px), 0 calc(100% + 1px), -1px 0, calc(100% + 1px) 0;
+  animation: bulbs 2s steps(4) infinite;
+}
+@keyframes bulbs { to { background-position: -1px calc(100% + 1px), calc(100% + 1px) calc(100% + 1px), 64px calc(100% + 1px), -1px 64px, calc(100% + 1px) -64px; } }
+[data-part="overlay"]::before { content: ""; position: absolute; inset: -20% 0 0; background: url("assets/coin.svg") 0 0 / 46px 46px; opacity: 0;
+  -webkit-mask: linear-gradient(transparent, #000 20%, #000 70%, transparent); mask: linear-gradient(transparent, #000 20%, #000 70%, transparent); }
+:root[data-event="like"] [data-part="overlay"]::before { animation: coins 1.2s linear; }
+@keyframes coins { 0% { opacity: 0; background-position: 0 -200px, 23px -120px; } 15% { opacity: .9; } 85% { opacity: .9; } 100% { opacity: 0; background-position: 0 600px, 23px 700px; } }
+[data-part="overlay"]::after { content: "BIG WIN"; position: absolute; inset: 0; display: grid; place-items: center; font: 900 min(13vw, 140px) "Bungee", sans-serif;
+  color: #ffd700; text-shadow: 0 0 30px #7000ff, 0 0 60px #00d2ff, 0 6px 0 #3a1d7a; opacity: 0; }
+:root[data-event="like"] [data-part="overlay"]::after { animation: bigwin 1.2s ease-out; }
+:root[data-event="like"] [data-part="overlay"] { animation-duration: .5s; }
+@keyframes bigwin { 0% { opacity: 0; transform: scale(.6); } 20% { opacity: 1; transform: scale(1.08); } 35%, 60% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1.15); } }
+@media (prefers-reduced-motion: reduce) { [data-part="overlay"] { animation: none; } }
+
+/* progress: a bonus meter of bulbs */
+.prog-blocks { justify-content: space-between; }
+.prog-blocks i { flex: 0 0 14px; width: 14px; height: 14px; border-radius: 50%; background: #1b1440; box-shadow: inset 0 0 3px rgb(0 0 0 / .8); }
+.prog-blocks i.on { background: radial-gradient(circle at 40% 35%, #e8fdff, #00d2ff 60%, #0a4a7a); box-shadow: 0 0 8px #00d2ff; }
+/* arcade buttons: play (spin) green, next amber, previous red */
+[data-part="player.button.play"] { background: radial-gradient(circle at 40% 30%, #c8fbff, #00d2ff 60%, #0a3f6e) !important; box-shadow: 0 0 0 4px #d4af37, 0 0 18px rgb(0 210 255 / .7) !important; color: #04101f !important; }
+[data-part="player.button.next"] { background: radial-gradient(circle at 40% 30%, #e6c8ff, #7000ff 60%, #2a0a66) !important; color: #f4ecff !important; box-shadow: 0 0 0 3px #d4af37 !important; }
+[data-part="player.button.prev"] { background: radial-gradient(circle at 40% 30%, #ffd0f4, #f093fb 55%, #6a1a6e) !important; color: #2a0626 !important; box-shadow: 0 0 0 3px #d4af37 !important; }
+/* rarity from the Reels helper plugin (data-fx on the app, round 15 F1): a badge after the title, a lit payline on epic and up */
+[data-part="app"][data-fx~="rare"] [data-part="info.title"]::after { content: "  ★ RARE"; color: #7fd4ff; font-size: .55em; }
+[data-part="app"][data-fx~="epic"] [data-part="info.title"]::after { content: "  ★★ EPIC"; color: #d68cff; font-size: .55em; }
+[data-part="app"][data-fx~="legendary"] [data-part="info.title"]::after { content: "  ★★★ LEGENDARY"; color: #ffe066; font-size: .55em; text-shadow: 0 0 12px #ff9900; }
+[data-part="app"][data-fx~="epic"] .lay-view-nowplaying [data-cell^="slot:reel"]::after, [data-part="app"][data-fx~="legendary"] .lay-view-nowplaying [data-cell^="slot:reel"]::after,
+[data-part="app"][data-fx~="legendary"] .lay-view-nowplaying [data-cell="art"]::after { opacity: .85; }
+
+/* the lever, in the empty column right of the reels: pulls down on a skip / new song */
+.lay-view-nowplaying [data-area="r"] { position: relative; }
+.lay-view-nowplaying [data-area="r"]::before { content: ""; position: absolute; left: 18px; top: 18%; width: 12px; height: 200px; border-radius: 6px;
+  background: linear-gradient(90deg, #9a9a9a, #f0f0f0 45%, #8a8a8a); transform-origin: 50% 100%; box-shadow: 0 0 0 2px #7a4a00; }
+.lay-view-nowplaying [data-area="r"]::after { content: ""; position: absolute; left: 4px; top: calc(18% - 30px); width: 40px; height: 40px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #e6c8ff, #7000ff 55%, #2a0a66); box-shadow: 0 4px 10px rgb(0 0 0 / .6); transform-origin: 24px 230px; }
+.lay-view-nowplaying [data-area="r"] { min-height: 260px; }
+@keyframes lever { 0% { transform: none; } 30% { transform: rotateX(70deg) scaleY(.35); } 100% { transform: none; } }
+@keyframes lever-ball { 0% { transform: none; } 30% { transform: translateY(150px); } 100% { transform: none; } }
+:root[data-event="skip"] [data-area="r"]::before, :root[data-event="track-change"] [data-area="r"]::before { animation: lever .7s ease-in-out; }
+:root[data-event="skip"] [data-area="r"]::after, :root[data-event="track-change"] [data-area="r"]::after { animation: lever-ball .7s ease-in-out; }
+
+/* the home screen: the cover in a gold reel window, the playing row lit gold */
+[data-part="nowplaying"] .art { box-shadow: 0 0 0 5px #d4af37, 0 0 0 9px #24174d, 0 0 30px rgb(0 210 255 / .45) !important; }
+[data-part="tracklist.row"][data-state~="active"] { background: linear-gradient(90deg, rgb(0 210 255 / .2), transparent); box-shadow: inset 3px 0 0 #00d2ff; }
+/* the mini player is too small for marquee bulbs */
+[data-part="app"][data-state~="mini"] [data-part="overlay"] { background: none; animation: none; }
+/* the mini player: one reel window */
+.lay-view-mini [data-cell="art"] { border-radius: 10px; box-shadow: inset 0 0 0 3px #d4af37; padding: 4px; background: #120d26; }

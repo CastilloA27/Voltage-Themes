@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "pastel-goth",
+  "name": "Pastel goth",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "Pink and lilac on black, a rounded font, round covers, little bats, stars and bows around the window.",
+  "fonts": [
+    {
+      "family": "Fredoka",
+      "src": "assets/fredoka/Fredoka.ttf",
+      "weight": "300 700"
+    }
+  ],
+  "tokens": {
+    "color.bg": "#120914",
+    "color.text": "#ffe6f4",
+    "color.text-dim": "#d8a9cc",
+    "color.text-strong": "#fff4fb",
+    "color.text-soft": "#ffd9ee",
+    "color.text-muted": "#e9bfe0",
+    "color.surface": "rgba(42, 16, 48, .55)",
+    "color.border": "rgba(255, 154, 213, .22)",
+    "color.brand": "#ff9ad5",
+    "color.on-accent": "#2a0f2a",
+    "color.knob": "#ffc7e8",
+    "color.select-bg": "#3a1840",
+    "surface.menu": "#1e0c22",
+    "surface.pop": "#220e26",
+    "surface.tip": "#1e0c22",
+    "effect.blur": "18px",
+    "effect.glow-size": "16px",
+    "effect.glow-alpha": "45%",
+    "accent.album-mix": "0.35",
+    "shape.radius": "22px",
+    "shape.roundness": "1.6"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#ff9ad5"
+  },
+  "parts": {
+    "art": {
+      "variant": "round"
+    },
+    "progress": {
+      "variant": "line"
+    }
+  },
+  "strings": {
+    "empty.queue": "nothing queued yet... play something cute",
+    "nowplaying.idle": "shhh, nothing playing",
+    "empty.search": "search for something spooky (or sweet)"
+  },
+  "icons": {
+    "heart": "assets/bow.svg"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "art info info",
+        "art bar vol",
+        "art prog prog",
+        "list list list"
+      ],
+      "columns": "minmax(220px, 38%) 1fr 270px",
+      "rows": "minmax(0, 1fr) 72px 36px minmax(0, 1.2fr)",
+      "place": {
+        "art": "art",
+        "info": "info",
+        "bar": "player",
+        "vol": "volume",
+        "prog": "progress",
+        "list": "sidebar"
+      },
+      "below": {
+        "800px": {
+          "areas": [
+            "info",
+            "bar",
+            "prog",
+            "list"
+          ],
+          "columns": "1fr",
+          "rows": "auto 72px 36px minmax(0, 1fr)",
+          "place": {
+            "info": "info",
+            "bar": "player",
+            "prog": "progress",
+            "list": "sidebar"
+          }
+        }
+      }
+    },
+    "nowplaying": {
+      "areas": [
+        "back . video",
+        ". art .",
+        ". info .",
+        "prog prog prog",
+        "ctl ctl vol"
+      ],
+      "columns": "1fr minmax(0, 440px) 1fr",
+      "rows": "auto minmax(0, 1fr) auto 36px 88px",
+      "place": {
+        "back": "back",
+        "video": "video",
+        "art": "art",
+        "info": "info",
+        "prog": "progress",
+        "ctl": "player",
+        "vol": "volume"
+      }
+    }
+  },
+  "overlay": true,
+  "css": "theme.css"
+}

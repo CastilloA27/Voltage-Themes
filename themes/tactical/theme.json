@@ -1,0 +1,159 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "tactical",
+  "name": "Tactical",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "A gamer HUD: olive and amber, corner brackets on every panel, a stencil font, a compass-tape progress bar, the mini player as a HUD strip.",
+  "fonts": [
+    {
+      "family": "Black Ops One",
+      "src": "assets/blackops/BlackOpsOne-Regular.ttf"
+    },
+    {
+      "family": "Share Tech Mono",
+      "src": "assets/sharetech/ShareTechMono-Regular.ttf"
+    }
+  ],
+  "tokens": {
+    "color.bg": "#0b0e08",
+    "color.text": "#dfe4cf",
+    "color.text-dim": "#a3ad8c",
+    "color.text-strong": "#f4f7e8",
+    "color.text-soft": "#cfd6ba",
+    "color.text-muted": "#b7c09f",
+    "color.surface": "rgba(22, 28, 15, .84)",
+    "color.border": "rgba(255, 176, 0, .22)",
+    "color.brand": "#ffb000",
+    "color.on-accent": "#1a1200",
+    "color.knob": "#ffcf5a",
+    "color.select-bg": "#2a3218",
+    "surface.menu": "#141a0d",
+    "surface.pop": "#161d0f",
+    "surface.tip": "#141a0d",
+    "effect.blur": "4px",
+    "effect.glow-size": "8px",
+    "effect.glow-alpha": "35%",
+    "accent.album-mix": "0",
+    "shape.radius": "2px",
+    "shape.roundness": "0.2"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#ffb000"
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    },
+    "tracklist": {
+      "variant": "dense"
+    },
+    "nav": {
+      "variant": "sidebar"
+    }
+  },
+  "supports": {
+    "background": [
+      "gradient"
+    ]
+  },
+  "strings": {
+    "nowplaying.idle": "No signal. Awaiting uplink",
+    "empty.queue": "Queue empty. Awaiting orders.",
+    "empty.search": "Enter search coordinates",
+    "library.liked": "Commendations",
+    "explore.fromLiked": "From your commendations",
+    "nav.stats": "Debrief",
+    "note.liked": "Target marked",
+    "player.next": "Advance",
+    "player.prev": "Fall back",
+    "nav.home": "Base",
+    "nav.explore": "Recon",
+    "nav.settings": "Loadout",
+    "nav.mini": "HUD"
+  },
+  "sounds": {
+    "click": "assets/tick.wav",
+    "navigate": "assets/blip.wav",
+    "skip": "assets/hum.wav"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "list art intel",
+        "list art comms",
+        "list prog prog",
+        "list bar vol"
+      ],
+      "columns": "minmax(260px, 320px) 1fr minmax(240px, 300px)",
+      "rows": "auto minmax(0, 1fr) 40px 72px",
+      "place": {
+        "list": "sidebar",
+        "art": "art",
+        "intel": "info",
+        "comms": "lyrics",
+        "prog": "progress",
+        "bar": "player",
+        "vol": "volume"
+      },
+      "resizable": [
+        "list",
+        "comms"
+      ],
+      "below": {
+        "1000px": {
+          "areas": [
+            "list art",
+            "list intel",
+            "prog prog",
+            "bar bar"
+          ],
+          "columns": "minmax(240px, 300px) 1fr",
+          "rows": "minmax(0, 1fr) auto 40px 72px",
+          "place": {
+            "list": "sidebar",
+            "art": "art",
+            "intel": "info",
+            "prog": "progress",
+            "bar": "player"
+          }
+        }
+      }
+    },
+    "nowplaying": {
+      "areas": [
+        "back . . video",
+        "intel art art comms",
+        "prog prog prog prog",
+        "ctl ctl vol vol"
+      ],
+      "columns": "minmax(200px, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(200px, 1fr)",
+      "rows": "auto minmax(0, 1fr) 40px 88px",
+      "place": {
+        "back": "back",
+        "video": "video",
+        "intel": "info",
+        "art": "art",
+        "comms": "lyrics",
+        "prog": "progress",
+        "ctl": "player",
+        "vol": "volume"
+      }
+    },
+    "mini": {
+      "areas": [
+        "art meta ctl"
+      ],
+      "columns": "48px 1fr auto",
+      "place": {
+        "art": "art",
+        "meta": "info",
+        "ctl": "player"
+      }
+    }
+  },
+  "css": "theme.css"
+}
