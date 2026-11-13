@@ -1,0 +1,81 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "big-and-clear",
+  "name": "Big & Clear",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "Large, clear and calm: big text in a font made for legibility, big buttons, contrast above 7:1, no blur and no motion. The player first, the list below.",
+  "fonts": [
+    {
+      "family": "Atkinson Hyperlegible",
+      "src": "assets/atkinson/AtkinsonHyperlegible-Regular.ttf",
+      "weight": "400"
+    },
+    {
+      "family": "Atkinson Hyperlegible",
+      "src": "assets/atkinson/AtkinsonHyperlegible-Bold.ttf",
+      "weight": "700"
+    }
+  ],
+  "tokens": {
+    "color.bg": "#000000",
+    "color.text": "#ffffff",
+    "color.text-dim": "#e0e0e0",
+    "color.text-strong": "#ffffff",
+    "color.text-soft": "#ffffff",
+    "color.text-muted": "#e0e0e0",
+    "color.surface": "#111111",
+    "color.border": "#ffffff",
+    "color.brand": "#ffd400",
+    "color.on-accent": "#000000",
+    "color.knob": "#ffffff",
+    "color.focus": "#ffd400",
+    "color.select-bg": "#333300",
+    "surface.menu": "#111111",
+    "surface.pop": "#111111",
+    "surface.tip": "#111111",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0",
+    "shape.radius": "10px",
+    "font.body": "\"Atkinson Hyperlegible\", \"Segoe UI\", sans-serif"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#ffd400"
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    }
+  },
+  "supports": {
+    "background": [
+      "black"
+    ]
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "art info",
+        "prog prog",
+        "bar vol",
+        "list list"
+      ],
+      "columns": "minmax(160px, 240px) minmax(0, 1fr)",
+      "rows": "minmax(150px, 240px) 60px 96px minmax(0, 1fr)",
+      "place": {
+        "art": "art",
+        "info": "info",
+        "prog": "progress",
+        "bar": "player",
+        "vol": "volume",
+        "list": "sidebar"
+      }
+    }
+  },
+  "css": "theme.css"
+}

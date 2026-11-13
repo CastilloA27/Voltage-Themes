@@ -1,0 +1,95 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "comic",
+  "name": "Comic",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "light",
+  "description": "A comic page: ink-bordered panels, halftone dots, the lyrics as speech bubbles, a lettered title and a POW! on every like.",
+  "fonts": [
+    {
+      "family": "Bangers",
+      "src": "assets/bangers/Bangers-Regular.ttf"
+    }
+  ],
+  "tokens": {
+    "color.bg": "#fff6d8",
+    "color.text": "#111111",
+    "color.text-dim": "#3a3a3a",
+    "color.text-strong": "#111111",
+    "color.text-soft": "#111111",
+    "color.text-muted": "#3a3a3a",
+    "color.surface": "#ffffff",
+    "color.border": "#111111",
+    "color.ink": "#111111",
+    "color.shade": "#3a3a3a",
+    "color.knob": "#fff6d8",
+    "color.focus": "#111111",
+    "color.placeholder": "#111111",
+    "color.select-bg": "#111111",
+    "color.mini-solid": "#fff6d8",
+    "color.media-bg": "#ffffff",
+    "surface.menu": "#ffffff",
+    "surface.pop": "#ffffff",
+    "surface.drag": "#ffffff",
+    "surface.game": "#fff6d8",
+    "surface.tip": "#ffffff",
+    "color.brand": "#e5221a",
+    "color.on-accent": "#ffffff",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0",
+    "shape.radius": "0px",
+    "shape.roundness": "0",
+    "font.body": "\"Segoe UI\", sans-serif"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#e5221a"
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    },
+    "tracklist": {
+      "variant": "dense"
+    }
+  },
+  "supports": {
+    "background": [
+      "black"
+    ]
+  },
+  "overlay": true,
+  "strings": {
+    "note.liked": "POW!",
+    "nowplaying.idle": "Meanwhile... nothing is playing",
+    "empty.queue": "To be continued (queue a song)"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "art lyr list",
+        "info lyr list",
+        "prog prog prog",
+        "bar bar bar"
+      ],
+      "columns": "minmax(220px, 1fr) minmax(0, 1.2fr) minmax(260px, 330px)",
+      "rows": "minmax(0, 1fr) auto 44px 72px",
+      "place": {
+        "art": "art",
+        "info": "info",
+        "lyr": "lyrics",
+        "prog": "progress",
+        "bar": "player",
+        "list": "sidebar"
+      },
+      "resizable": [
+        "list"
+      ]
+    }
+  },
+  "css": "theme.css"
+}

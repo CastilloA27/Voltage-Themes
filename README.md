@@ -25,6 +25,10 @@ store** reads. Themes contain no code; Voltage checks every file again when it i
 | Blueprint | blue grid paper, the cover as a drawing with a dimension line, a title block | parts list / drawing / title block |
 | E-ink | grey on paper, nothing moves, no blur: the cheapest theme to draw (2.4% of a core playing vs 17.6% for Voltage's, measured) | page header / list |
 | Retro Desktop | late-90s windows (generic, no OS logos): bevels, a title bar on every panel, a taskbar along the bottom | windows + taskbar |
+| Comic | ink-bordered panels, halftone dots, the lyrics as speech bubbles, POW! on a like | cover + bubbles + list |
+| Big & Clear | accessibility: big legible text, big buttons, contrast above 7:1 (measured 9.85), nothing moves | player first, list below |
+| Deep Space | a slow starfield, the cover as a planet with an orbit ring and a moon | planet + docked list |
+| Aquarium | teal water, rising bubbles, light ripples over the round cover | list + tank, controls on the sand |
 
 Theme sources that aren't copies of Voltage-Plugins' examples are made by `tools/make-store.py`.
 

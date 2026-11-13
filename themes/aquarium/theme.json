@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "aquarium",
+  "name": "Aquarium",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "Deep teal water: bubbles rising, light ripples playing over the round cover, the controls on the sand at the bottom.",
+  "tokens": {
+    "color.bg": "#021a1f",
+    "color.text": "#e2fbff",
+    "color.text-dim": "#9fd0d8",
+    "color.text-strong": "#ffffff",
+    "color.text-soft": "#d0f4fa",
+    "color.text-muted": "#acdbe2",
+    "color.surface": "rgba(4, 52, 62, .5)",
+    "color.border": "rgba(150, 240, 255, .2)",
+    "color.brand": "#4fe3e8",
+    "color.on-accent": "#022126",
+    "color.knob": "#e2fbff",
+    "color.select-bg": "#0a4a55",
+    "surface.menu": "#04323b",
+    "surface.pop": "#04323b",
+    "surface.tip": "#04323b",
+    "effect.blur": "14px",
+    "effect.glow-size": "12px",
+    "effect.glow-alpha": "35%",
+    "accent.album-mix": "0.2",
+    "shape.radius": "22px"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#4fe3e8"
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    }
+  },
+  "supports": {
+    "background": [
+      "gradient"
+    ]
+  },
+  "overlay": true,
+  "strings": {
+    "nowplaying.idle": "Just bubbles",
+    "tab.queue": "Current",
+    "empty.queue": "The tank is empty"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "list tank",
+        "list name",
+        "sand sand",
+        "bar bar"
+      ],
+      "columns": "minmax(260px, 340px) minmax(0, 1fr)",
+      "rows": "minmax(0, 1fr) auto 44px 76px",
+      "place": {
+        "list": "sidebar",
+        "tank": "art",
+        "name": "info",
+        "sand": "progress",
+        "bar": "player"
+      },
+      "resizable": [
+        "list"
+      ]
+    }
+  },
+  "css": "theme.css"
+}

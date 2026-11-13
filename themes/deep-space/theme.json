@@ -1,0 +1,85 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "deep-space",
+  "name": "Deep Space",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "description": "A slow starfield, the cover as a planet inside an orbit ring with a moon, HUD lettering; the list docked on the right.",
+  "fonts": [
+    {
+      "family": "IBM Plex Mono",
+      "src": "assets/plexmono/IBMPlexMono-Regular.ttf"
+    }
+  ],
+  "tokens": {
+    "color.bg": "#02030a",
+    "color.text": "#dfe8ff",
+    "color.text-dim": "#9fb0d8",
+    "color.text-strong": "#ffffff",
+    "color.text-soft": "#cfdcff",
+    "color.text-muted": "#aebde3",
+    "color.surface": "rgba(10, 16, 40, .55)",
+    "color.border": "rgba(120, 170, 255, .22)",
+    "color.brand": "#7fb2ff",
+    "color.on-accent": "#02030a",
+    "color.knob": "#dfe8ff",
+    "color.select-bg": "#14224a",
+    "surface.menu": "#0a1028",
+    "surface.pop": "#0a1028",
+    "surface.tip": "#0a1028",
+    "effect.blur": "10px",
+    "effect.glow-size": "14px",
+    "effect.glow-alpha": "35%",
+    "accent.album-mix": "0.25",
+    "shape.radius": "14px",
+    "font.mono": "\"IBM Plex Mono\", Consolas, monospace"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#7fb2ff"
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    },
+    "tracklist": {
+      "variant": "dense"
+    }
+  },
+  "supports": {
+    "background": [
+      "gradient"
+    ]
+  },
+  "overlay": true,
+  "strings": {
+    "nowplaying.idle": "Signal lost in deep space",
+    "tab.queue": "Flight plan",
+    "empty.queue": "Flight plan empty"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "orbit list",
+        "info list",
+        "prog list",
+        "bar list"
+      ],
+      "columns": "minmax(0, 1fr) minmax(260px, 340px)",
+      "rows": "minmax(0, 1fr) auto 44px 72px",
+      "place": {
+        "orbit": "art",
+        "info": "info",
+        "prog": "progress",
+        "bar": "player",
+        "list": "sidebar"
+      },
+      "resizable": [
+        "list"
+      ]
+    }
+  },
+  "css": "theme.css"
+}

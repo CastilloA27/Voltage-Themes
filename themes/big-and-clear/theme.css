@@ -1,0 +1,18 @@
+*, *::before, *::after { animation: none !important; transition: none !important; }
+.lay-area { backdrop-filter: none !important; box-shadow: none !important; }
+.app { font-size: 17px; }
+.lay-area { background-color: #111111 !important; border: 2px solid #ffffff !important; }
+.lay-art { display: grid; place-items: center; min-height: 0; overflow: hidden; }
+.lay-art .art-part { display: grid; grid-template: minmax(0, 1fr) / minmax(0, 1fr); place-items: center; width: 100%; height: 100%; min-height: 0; }
+.lay-art img { width: auto !important; height: auto !important; max-width: 100% !important; max-height: 100% !important; aspect-ratio: 1; object-fit: cover; }
+.lay-info { text-align: left; align-self: center; padding: 0 18px !important; }
+.lay-info [data-part="info.title"] { font-size: 36px; font-weight: 700; line-height: 1.15; }
+.lay-info .info-part > :not([data-part="info.title"]) { font-size: 20px; }
+[data-part="tracklist.row"] { padding: 12px 10px !important; font-size: 18px; border-bottom: 1px solid #555555; }
+[data-part="tracklist.row"] img { width: 56px !important; height: 56px !important; }
+[data-part="tracklist.row.artist"], [data-part="tracklist.row.time"] { font-size: 16px !important; color: #e0e0e0 !important; opacity: 1; }
+[data-part="tracklist.row"][data-state~="active"] { background-color: #333300 !important; box-shadow: inset 0 0 0 3px #ffd400 !important; }
+.lay-player .btn, .lay-volume .btn { min-width: 52px !important; min-height: 52px !important; }
+[data-part="player.button.play"] { min-width: 76px !important; min-height: 76px !important; background-color: #ffd400 !important; color: #000000 !important; }
+:focus-visible { outline: 4px solid #ffd400 !important; outline-offset: 3px !important; }
+[data-part="progress.time"] { font-size: 16px; color: #ffffff; }
