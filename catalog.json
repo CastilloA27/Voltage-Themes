@@ -1,0 +1,1084 @@
+{
+  "version": 1,
+  "kind": "themes",
+  "seq": 1,
+  "expires": 1826120352,
+  "themes": [
+    {
+      "id": "aquarium",
+      "name": "Aquarium",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Deep teal water: bubbles rising, light ripples playing over the round cover, the controls on the sand at the bottom.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "overlay",
+        "animated"
+      ],
+      "size": 5206,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/aquarium",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "0b739a6219529df67a71ccdda23204cae41690ed77a259c0d25bae5a8de486e8"
+        },
+        {
+          "path": "assets/bubbles.svg",
+          "sha256": "7d768e72985975965a458b2c9cf056b0bac9284ac1474cdc5720acf13a55dd5f"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "2cc856de7c4928a584b554c27a2bc81aae0b8b0ba113deb444042288bd09c5ed"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "036081bc0631af34cb76d5815c76c8e081111e5f59b772bf0014ac8bf95b5538"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/aquarium-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/aquarium-2.png"
+      ]
+    },
+    {
+      "id": "big-and-clear",
+      "name": "Big & Clear",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Large, clear and calm: big text in a font made for legibility, big buttons, contrast above 7:1, no blur and no motion. The player first, the list below.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "low-cpu"
+      ],
+      "size": 118107,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/big-and-clear",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "a773b55adbdbbe32a684ed117b48490ad8341bf7c2d55d9beab4a236fec41a5a"
+        },
+        {
+          "path": "assets/atkinson/AtkinsonHyperlegible-Bold.ttf",
+          "sha256": "5a3b0c8cc8ca545155150b4512a1fa248298df121c50d6557e651e61fbdab92f"
+        },
+        {
+          "path": "assets/atkinson/AtkinsonHyperlegible-Regular.ttf",
+          "sha256": "7fb917c89019896d0b52ee84b7cbb3304c18cb90b19a62f5e32712bd23e97669"
+        },
+        {
+          "path": "assets/atkinson/OFL.txt",
+          "sha256": "f32d22b3908fcad2c86a74000614ec22e6a7f66ea7e867e616026a27aebdc143"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "7ec020cfb058ef5100e1eb21a5261e7d1d93616aae5ba0501b52868ebf7ee3d2"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "0ad7ba41cf63a6f45574500a88b2001a8a3150a435e5e23c30357432c95183ad"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/big-and-clear-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/big-and-clear-2.png"
+      ]
+    },
+    {
+      "id": "blueprint",
+      "name": "Blueprint",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A drafting sheet: blue grid paper, white lines, the cover as the drawing with a dimension line, a title block in the corner.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "low-cpu"
+      ],
+      "size": 194032,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/blueprint",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "bebe37769f5e7806d236d85ac1f3d8297c67e3f424fe3bd0561ec63d953c7193"
+        },
+        {
+          "path": "assets/architects/ArchitectsDaughter-Regular.ttf",
+          "sha256": "6159718a08898e34bc1cb7354086141a5f9a70b73e54dbec27ead0d59a697359"
+        },
+        {
+          "path": "assets/architects/OFL.txt",
+          "sha256": "0e441ae9f18ad0c294cc5b6ae3974c2db1614cab220598578b1b58c4cc334485"
+        },
+        {
+          "path": "assets/plexmono/IBMPlexMono-Regular.ttf",
+          "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+        },
+        {
+          "path": "assets/plexmono/OFL.txt",
+          "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "36c9cf29bf39a150ea596099a07eb820669f646090b0d22da1ac9c2f1c7e06c5"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "3428c0124d4ce128496a1a25702bddc7548071a7b33e2ea2f9f992e4509c1307"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/blueprint-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/blueprint-2.png"
+      ]
+    },
+    {
+      "id": "cassette",
+      "name": "Cassette",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "An 80s tape deck: the cover on the cassette label with two reels turning in its window, the queue as a hand-written J-card, chunky piano-key buttons.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "animated"
+      ],
+      "size": 413668,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/cassette",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "d3c69bdd4524400fd7c1253573d512c481ad8a04152a7a4f053cc9f0365cf4ab"
+        },
+        {
+          "path": "assets/caveat/Caveat.ttf",
+          "sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988"
+        },
+        {
+          "path": "assets/caveat/OFL.txt",
+          "sha256": "1f9d81d094273d82f3898a1ee8b598a717d050ecbf5ff7bede105b704880157b"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "d44c04c00c173d7e4fffab51996698c9e07b516d2cff82ed00204db83c627bbe"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "16c061e7a1d01c6355a722a5afbced730f979f497b1ee6c5a6368a07b79d5f71"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/cassette-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/cassette-2.png"
+      ]
+    },
+    {
+      "id": "comic",
+      "name": "Comic",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A comic page: ink-bordered panels, halftone dots, the lyrics as speech bubbles, a lettered title and a POW! on every like.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "light",
+        "layout",
+        "fonts",
+        "overlay",
+        "animated"
+      ],
+      "size": 104110,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/comic",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "36878cd66de66306b26ed1d893f62f0cd5afb328a1705c04db68e131bf9e1015"
+        },
+        {
+          "path": "assets/bangers/Bangers-Regular.ttf",
+          "sha256": "4160a7311de9342674cce9160cde9fcbb30f48190397d86ff1b70b455af65824"
+        },
+        {
+          "path": "assets/bangers/OFL.txt",
+          "sha256": "630dd5a307c0657b094d324e069b390edf90182fe5003639e06c02a0e5769af7"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "606c7afb384d4f02e32cd6054723d00e1da53248820ca4f29e08feb006cf31c5"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "ed0221c8eaf9c0919f0542784f261698519b0c071714b5ea5dd2d4c4c1716105"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/comic-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/comic-2.png"
+      ]
+    },
+    {
+      "id": "crt-green",
+      "name": "CRT green",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Green phosphor on a curved tube: vignette, scanlines, a faint flicker, terse tab names and relay clicks.",
+      "licence": "CC0 / see files",
+      "tags": [
+        "dark",
+        "layout",
+        "sounds",
+        "fonts",
+        "overlay",
+        "animated"
+      ],
+      "size": 36568,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/crt-green",
+      "files": [
+        {
+          "path": "assets/LICENSE.txt",
+          "sha256": "b36a264a5c5d34d8d6452e4318121ce7dd6e99070091cc1b6a51b18a70266b36"
+        },
+        {
+          "path": "assets/blip.wav",
+          "sha256": "2884d3850d434e3d3aa82a1643d0d61c4ddaddc75083f46cc68d11e23d86b907"
+        },
+        {
+          "path": "assets/hum.wav",
+          "sha256": "273559db0f6e7be37d36c13c1df22a3bfabd9d3a42f743fc68da17a7b398063f"
+        },
+        {
+          "path": "assets/tick.wav",
+          "sha256": "4ef45dc0625a66880ef9a255432990f52e134a5cce86bd298558ea5793ed8af8"
+        },
+        {
+          "path": "assets/volt-pixel.ttf",
+          "sha256": "df49df63a7dfbd6e47fc2418a059c802fa5d93e0fac0666177087bc84fbb534b"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "2cbd3cdf779d7a78aa836969097d85d53d08690a8f38936f4a1b8c4086eb58e1"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "26a2c7413092bb25d865c2c3b90b68f7881ca83a0446ef514b38dd53cfcc6bae"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/crt-green-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/crt-green-2.png"
+      ]
+    },
+    {
+      "id": "deep-space",
+      "name": "Deep Space",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A slow starfield, the cover as a planet inside an orbit ring with a moon, HUD lettering; the list docked on the right.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "overlay",
+        "animated"
+      ],
+      "size": 146361,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/deep-space",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "ff779a45a997be2aa29d8c9af34aeca1bdbd520ebb0e44055e896bb270965a62"
+        },
+        {
+          "path": "assets/plexmono/IBMPlexMono-Regular.ttf",
+          "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+        },
+        {
+          "path": "assets/plexmono/OFL.txt",
+          "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "f587ce896408dd68d21885235da44a77eda8682990e2f194a2ee670b4edc0645"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "0e708a98036c5b65ea1762fc4b8f083c0cf46f0b2e2836f3baf98c6b5992392c"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/deep-space-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/deep-space-2.png"
+      ]
+    },
+    {
+      "id": "e-ink",
+      "name": "E-ink",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Grey on paper like an e-reader: a page header with a small cover, the list as the page. No animation, no blur, no glow.",
+      "licence": "CC0 / see files",
+      "tags": [
+        "light",
+        "layout",
+        "low-cpu"
+      ],
+      "size": 4115,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/e-ink",
+      "files": [
+        {
+          "path": "theme.css",
+          "sha256": "99f2c80ac2cafd75ea43d8d42c63e8a54faf1de59a2c9c62328b2cd2b16ac975"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "e784f9b66045e81abd3fbd4de25d52b6a1bc7949ed77ef7d86ed52d499d02854"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/e-ink-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/e-ink-2.png"
+      ]
+    },
+    {
+      "id": "frosted-light",
+      "name": "Frosted light",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Frosted glass in light or dark, following Windows' setting; a red accent, a big cover, the player as a bar.",
+      "licence": "CC0 / see files",
+      "tags": [
+        "light",
+        "dark",
+        "layout",
+        "low-cpu"
+      ],
+      "size": 3208,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/frosted-light",
+      "files": [
+        {
+          "path": "theme.css",
+          "sha256": "fed70c1bbc3da80723e18868a5ee710905842d04dff21a321271137bcdb435ff"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "967b9de53a983ad1b21c423e367d6c5ff792e50a35ef88d92e946a794a79576a"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/frosted-light-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/frosted-light-2.png"
+      ]
+    },
+    {
+      "id": "handheld",
+      "name": "Handheld",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A pocket console look in four greens: everything on a dot-matrix screen in a pixel font, round A / B buttons, the mini player as the whole device. No console branding.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "light",
+        "layout",
+        "fonts",
+        "low-cpu"
+      ],
+      "size": 128229,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/handheld",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "bd01b85cce5b6470aec4d8c4125c840f9851c6592c3b24598cafd3caac268fb8"
+        },
+        {
+          "path": "assets/pressstart/OFL.txt",
+          "sha256": "705960c3281a5765ecc0b59bd4ed7ca59eed165748076bc2fc3e8fdbfeb944b0"
+        },
+        {
+          "path": "assets/pressstart/PressStart2P-Regular.ttf",
+          "sha256": "034c77f1f05ec89421e4a63f0e3a4ca1ecf852cc6d2bf611f126f275728e017d"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "fbd4c3c5abcf956e5a1efee1daf56bacdc056573e4f74e41f80b30fe73060925"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "1f5ec63d0aa7fef1732b33706e0e94a5e217883034aa9119aaf023e90f348e4c"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/handheld-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/handheld-2.png"
+      ]
+    },
+    {
+      "id": "jackpot",
+      "name": "Jackpot",
+      "version": "2.0.0",
+      "author": "Voltage",
+      "description": "A video slot: a 5 x 3 symbol screen with the cover in the middle, reels that spin on every new song, paylines, coins and JACKPOT when you like a song.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "sounds",
+        "fonts",
+        "overlay",
+        "animated"
+      ],
+      "plugin": "reels",
+      "size": 219501,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/jackpot",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "58a7c1f8f6e1df6ed1958e76c9ed632984ec3074505c8036a1f6f6f89e044256"
+        },
+        {
+          "path": "assets/bell.wav",
+          "sha256": "9762b4f3aa7a76693885e9b797b8b9926a25b6e9519c169dcbce829ced12c698"
+        },
+        {
+          "path": "assets/bulbs-h.svg",
+          "sha256": "598638723b9a348567847f475ea68a60c634a1662e6f6927db37612eaed25eb1"
+        },
+        {
+          "path": "assets/bulbs-v.svg",
+          "sha256": "fc25b9498a1d0498e36d51b567656571e6ccd85cbddfaa96dec0aea543c2a0fb"
+        },
+        {
+          "path": "assets/bungee/Bungee-Regular.ttf",
+          "sha256": "c4f5361ce120af3e6b9156d0bf379fa19cda2ea0cd18ac01fd99596c6bf66e3f"
+        },
+        {
+          "path": "assets/bungee/OFL.txt",
+          "sha256": "d5787a50dde5be6c6daecab9ed459939b1bc37cff0d0e00257eaf1ec2cf4c16c"
+        },
+        {
+          "path": "assets/coin.svg",
+          "sha256": "b928c19b2751a84ac4de0a545045f480337e8b5c2c1a19b74377b627abc2550a"
+        },
+        {
+          "path": "assets/coin.wav",
+          "sha256": "73fe49001084bf838f8b0f941690138efff80564508072dc422f25d3631ad488"
+        },
+        {
+          "path": "assets/reel.svg",
+          "sha256": "48b57ef8e9200577b924ce7a15e80bcfdbea6fb41071f2ff11474cc040f7348b"
+        },
+        {
+          "path": "assets/reel.wav",
+          "sha256": "1486d0d7953ba09157ac772d0cf0708294bf83e4039cb5476d23fce7db25b210"
+        },
+        {
+          "path": "assets/tick.wav",
+          "sha256": "4ef45dc0625a66880ef9a255432990f52e134a5cce86bd298558ea5793ed8af8"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "c26fdd1f70e2237f2ceeb2daa7190431469a63b08fbb6a4eb4286239864edaf8"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "1879b08a566711fc1fbeeeb3c381d69e4d53d8affcf2406693d047ec471beb6a"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/jackpot-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/jackpot-2.png"
+      ]
+    },
+    {
+      "id": "night-city",
+      "name": "Night City",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Rain over neon: a magenta / cyan sign with the song title, rain streaks across the window, a glitch on every track change. The list as a lit shopfront.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "overlay",
+        "animated"
+      ],
+      "size": 62026,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/night-city",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "01f6a0412b4e00d884375d52bda3a56cedcb019ac1b44d8b009dff5b3b8a367e"
+        },
+        {
+          "path": "assets/monoton/Monoton-Regular.ttf",
+          "sha256": "951c4cea65ffede784a7c9672feec5d329a7e1e12216c42d53ecf36c90d04dea"
+        },
+        {
+          "path": "assets/monoton/OFL.txt",
+          "sha256": "585c6d2da8bcd8ffa651e0016f2e992a6891b625143a46a1dacf00699a817d9a"
+        },
+        {
+          "path": "assets/rain.svg",
+          "sha256": "30e59395215bcffddd9ad84131e5762e0815562c364bec028e51a17b9212b1a7"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "d610569bdafe2778388f44d75e708a668b9d2d0fcfaad21188531cbcf4526985"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "f12358ad0d9f0ae5fcdb09ae63c14518bead6970a76534fac57f963aaf3b7b11"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/night-city-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/night-city-2.png"
+      ]
+    },
+    {
+      "id": "paper",
+      "name": "Paper",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Black ink on newsprint: a blackletter masthead, big serif headlines, halftone covers, ruled columns. No glass, no glow.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "light",
+        "layout",
+        "fonts",
+        "low-cpu"
+      ],
+      "size": 407346,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/paper",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "288444abc6cf9450661355c1bf48213d86395a30de9f3a9694d1afc409d3cbca"
+        },
+        {
+          "path": "assets/playfair/OFL.txt",
+          "sha256": "566be814f8e96e93dfa16101331557eb6b5467e9e03f627c0910fe93ca12300e"
+        },
+        {
+          "path": "assets/playfair/PlayfairDisplay.ttf",
+          "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6"
+        },
+        {
+          "path": "assets/unifraktur/OFL.txt",
+          "sha256": "96199bf9ff12dd471a66911dee95440737b437e7f5a6fd30e9e950c16d66e8df"
+        },
+        {
+          "path": "assets/unifraktur/UnifrakturMaguntia-Book.ttf",
+          "sha256": "d64afc0547059dd2e4a78da48bda0aba0a9901be58c7f8c201a8b2b6b4492cc8"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "bc2ff7e1e43169cf3ab3a91488e2cc8ffc90c780463147bda93082de062daccf"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "cf487c3c43076ec2d72eb2b68bef78dbe2dc059dd30e62e41520403a4a58b731"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/paper-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/paper-2.png"
+      ]
+    },
+    {
+      "id": "pastel-goth",
+      "name": "Pastel goth",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Pink and lilac on black, a rounded font, round covers, little bats, stars and bows around the window.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "overlay",
+        "low-cpu"
+      ],
+      "size": 169914,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/pastel-goth",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "ec5e9332cf10ae176ecc955152b299eccf693982f5f684373f8418aa90862a08"
+        },
+        {
+          "path": "assets/bat.svg",
+          "sha256": "2eb7f0a60973e40194c16ba7c6a9fce526208048931ef86a9b8b42be8caa7d45"
+        },
+        {
+          "path": "assets/bow.svg",
+          "sha256": "3e10cb492645a499e2359962929bc2cf774f1f3c2c5d7d34ff690f9028b7617f"
+        },
+        {
+          "path": "assets/fredoka/Fredoka.ttf",
+          "sha256": "2ba02e68b152868aef9ba28e24b3648c7d457fe6f25c761f2c2c53fb61a73fc8"
+        },
+        {
+          "path": "assets/fredoka/OFL.txt",
+          "sha256": "5c9e7eee5c6b25f4b05b8d53b2e470ea4962f9ced742d044a98f7d95d1375bab"
+        },
+        {
+          "path": "assets/skull.svg",
+          "sha256": "61677ef31234271f9f1a2e7ce6e999d49ebcdacd1355c4e5cf2fb4b3b095e111"
+        },
+        {
+          "path": "assets/star.svg",
+          "sha256": "7601b46a5260ad087a9047e6972751975d9a14826263377826ccfe863ebd55d2"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "4396c7be93a30104bb0d98bb6aff850401766f134130e1cd4c805d2e3751a1ba"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "dca31ebeef33ee59aaf70f3b1dab37d3041067527a3f3f48cf7914c2e6aec311"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/pastel-goth-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/pastel-goth-2.png"
+      ]
+    },
+    {
+      "id": "retro-desktop",
+      "name": "Retro Desktop",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Late-90s desktop windows: grey bevels, blue title bars on every panel, a teal desktop, the title bar as a taskbar along the bottom.",
+      "licence": "CC0 / see files",
+      "tags": [
+        "light",
+        "layout",
+        "low-cpu"
+      ],
+      "size": 6196,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/retro-desktop",
+      "files": [
+        {
+          "path": "theme.css",
+          "sha256": "c06c7fa438be29b1d489db6a34c4997c06aa46f0452bedf3acd8c0ea43426189"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "3b56248bd5f57bd1f0a2c3fc1e210885afedcc59005b0dc01fe18c6d17e3e4db"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/retro-desktop-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/retro-desktop-2.png"
+      ]
+    },
+    {
+      "id": "season-halloween",
+      "name": "Halloween",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A small seasonal theme: pumpkin orange on black, a little moon and drifting fog. Voltage underneath (the example of how small a theme can be).",
+      "licence": "CC0 / see files",
+      "tags": [
+        "dark",
+        "overlay",
+        "animated"
+      ],
+      "size": 1229,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/season-halloween",
+      "files": [
+        {
+          "path": "theme.css",
+          "sha256": "4378d204213dca0eb4bab4b8e3c52adbf8b5c511b550d7ddd7088c417f73d108"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "5ddf55543f9a12f6c5c27c658688a1d60b2901e81e2fe5c2b99103266c54f6a3"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/season-halloween-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/season-halloween-2.png"
+      ]
+    },
+    {
+      "id": "season-winter",
+      "name": "Winter",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A small seasonal theme: icy blue on deep navy and slow snowfall. Voltage underneath (the example of how small a theme can be).",
+      "licence": "CC0 / see files",
+      "tags": [
+        "dark",
+        "overlay",
+        "animated"
+      ],
+      "size": 1251,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/season-winter",
+      "files": [
+        {
+          "path": "theme.css",
+          "sha256": "593ec498d04a9908081d6c96de5036b730da4031040d38efff19d143142e41da"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "603431f04195bec8a52034a93a52424f83e2db1685af28906ef2d40902478342"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/season-winter-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/season-winter-2.png"
+      ]
+    },
+    {
+      "id": "sidebar",
+      "name": "Sidebar",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Search and tabs down the left, the song list as a table in the middle, art and the player in a bar along the bottom.",
+      "licence": "CC0 / see files",
+      "tags": [
+        "dark",
+        "layout",
+        "low-cpu"
+      ],
+      "size": 2062,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/sidebar",
+      "files": [
+        {
+          "path": "theme.css",
+          "sha256": "e166d2e935b490a2c53baefa473b702ac1626acdeb799afe988b1b8ffcc1043a"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "c7235ed7b2332de55f5d61eb8672c6d2a77ca7a8932a1178fb3a9c3e9974415b"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/sidebar-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/sidebar-2.png"
+      ]
+    },
+    {
+      "id": "spreadsheet",
+      "name": "Spreadsheet",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Stealth mode: a plain-looking sheet. The controls in a toolbar, the song in the formula bar, numbered rows, a status bar.",
+      "licence": "CC0 / see files",
+      "tags": [
+        "light",
+        "layout",
+        "low-cpu"
+      ],
+      "size": 6264,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/spreadsheet",
+      "files": [
+        {
+          "path": "theme.css",
+          "sha256": "04fc650be5006ce2116d9a27c91d531465b4ef98ddc90cd94a54da6cc02032ac"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "6c3952573ec2d7f42a98e73ec2bcafa03d48a8073c4b6b83deb28e8b6605fadd"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/spreadsheet-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/spreadsheet-2.png"
+      ]
+    },
+    {
+      "id": "studio",
+      "name": "Studio",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A mixing desk: two VU meters whose needles move with the music (with the VU meter plugin), a rack-mounted player, the queue as a channel list.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "low-cpu"
+      ],
+      "plugin": "vu-meter",
+      "size": 145774,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/studio",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "f52932f5a8f2df52befcd65aff882b4bd2aa4443c64c8632e20a3ee5920fcf3e"
+        },
+        {
+          "path": "assets/plexmono/IBMPlexMono-Regular.ttf",
+          "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+        },
+        {
+          "path": "assets/plexmono/OFL.txt",
+          "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "3354f25d1c38fa314bfda5f2f73817f48ee40b94dba2bfc9a64fde995fed57fb"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "22a82349bd13b149b698e860270a1e20337f2af0476b310f7de938284993fccc"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/studio-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/studio-2.png"
+      ]
+    },
+    {
+      "id": "sumi-ink",
+      "name": "Sumi Ink",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Watery black ink on washi: lyrics written down a hanging scroll, the cover in a brushed enso, ink-wash mountains, a red hanko seal.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "light",
+        "layout",
+        "sounds",
+        "fonts",
+        "overlay",
+        "animated"
+      ],
+      "size": 8459569,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/sumi-ink",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "71d636fb4aa45ba9ecfc6f4a6092ea2bb4db976bdefbf714fc600b168a110ebd"
+        },
+        {
+          "path": "assets/blot.svg",
+          "sha256": "1dcee5995bd8d89c5a382571343e5c1daa82888cf03e4b8e983575c2b26f5266"
+        },
+        {
+          "path": "assets/chime.wav",
+          "sha256": "e195ac6b692e0fd1218052299ebf40c30146f70ef524c9fee3fb7b9507d8663f"
+        },
+        {
+          "path": "assets/enso.svg",
+          "sha256": "4f34b16c11ead825a1527a8d25a505fce4233f5c791e1e247ddfabbe863e1b97"
+        },
+        {
+          "path": "assets/hanko.svg",
+          "sha256": "3cee20d06895319d02f0e8a231202073aa3c4c3ab29a9015c602c53bff708dfe"
+        },
+        {
+          "path": "assets/mountains.svg",
+          "sha256": "a3dca3582d34bd9f171aad5477f71e15718fbc2bd56cd8d689b98fafbea23de8"
+        },
+        {
+          "path": "assets/stroke.svg",
+          "sha256": "918ed335a3116b7b4da12bf8857f98906390bc84f54d1eb260c1cb8eabfd4daa"
+        },
+        {
+          "path": "assets/wash.svg",
+          "sha256": "aa2fd02fee8d521bb21379db9257c75cbe304cf163d4c777949feda1228b461b"
+        },
+        {
+          "path": "assets/yujisyuku/OFL.txt",
+          "sha256": "ef7c85c72ae94381c8bc4832ae4e6fbabdeafa2bb8a31313cd75dce95a690256"
+        },
+        {
+          "path": "assets/yujisyuku/YujiSyuku-Regular.ttf",
+          "sha256": "82728ebafc8c97391e2dab633414a806f344b8e4e2227d307179f07b548fca61"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "dcf1957f742de9f6586c48ffb88fc44d97acb9e4dd506574ab1e78eb5f3c5b9a"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "38156680960dd5ef0e2ef7cdedf1cfb8adc3136a36ee295ab9fca616cc503f71"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/sumi-ink-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/sumi-ink-2.png"
+      ]
+    },
+    {
+      "id": "tactical",
+      "name": "Tactical",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A gamer HUD: olive and amber, corner brackets on every panel, a stencil font, a compass-tape progress bar, the mini player as a HUD strip.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "sounds",
+        "fonts",
+        "animated"
+      ],
+      "size": 238536,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/tactical",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "7f81cc5dc9b49e46030126d05f84b5e12d33bba1dc43bf33120adf074dbdf861"
+        },
+        {
+          "path": "assets/blackops/BlackOpsOne-Regular.ttf",
+          "sha256": "282a825b5f294377387e3969f765408157dbea8da0f5d0aae68c6bc704b145b3"
+        },
+        {
+          "path": "assets/blackops/OFL.txt",
+          "sha256": "f67ca4a200424868ee8fcd5464d7b35ac1cbf7723f6bfdbd19a8524689fab9a8"
+        },
+        {
+          "path": "assets/blip.wav",
+          "sha256": "2884d3850d434e3d3aa82a1643d0d61c4ddaddc75083f46cc68d11e23d86b907"
+        },
+        {
+          "path": "assets/hum.wav",
+          "sha256": "273559db0f6e7be37d36c13c1df22a3bfabd9d3a42f743fc68da17a7b398063f"
+        },
+        {
+          "path": "assets/sharetech/OFL.txt",
+          "sha256": "9d96f445b6e9c701428811d0177f894874f8d6f07ecc30d568c506542368f3ff"
+        },
+        {
+          "path": "assets/sharetech/ShareTechMono-Regular.ttf",
+          "sha256": "9ceab1f87414829af259c0f537573ae03ef7dd3147c0b27a36a1a0beb6732677"
+        },
+        {
+          "path": "assets/tick.wav",
+          "sha256": "4ef45dc0625a66880ef9a255432990f52e134a5cce86bd298558ea5793ed8af8"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "ca219a6f5cdc7424a6e59c79128a0457b900eaf8f6d10c4162816407e9fd1b60"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "2637d1c5a7cd05ce18d4845f52abcc0106e400b682858b0da5daef04f509592f"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/tactical-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/tactical-2.png"
+      ]
+    },
+    {
+      "id": "terminal",
+      "name": "Terminal",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A text-only UI: a pixel font, square corners, no glass or glow, ASCII progress, command-style labels.",
+      "licence": "CC0 / see files",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "overlay",
+        "animated"
+      ],
+      "size": 28424,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/terminal",
+      "files": [
+        {
+          "path": "assets/LICENSE.txt",
+          "sha256": "b36a264a5c5d34d8d6452e4318121ce7dd6e99070091cc1b6a51b18a70266b36"
+        },
+        {
+          "path": "assets/volt-pixel.ttf",
+          "sha256": "df49df63a7dfbd6e47fc2418a059c802fa5d93e0fac0666177087bc84fbb534b"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "78370bc7e3bbda2fd5a700ab2cfa7d1c6dfca93c21260561d11b20264b1d0690"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "26991df67f7698b303a8bf97f89545ff0b232f355bf21f68536c616406236a20"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/terminal-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/terminal-2.png"
+      ]
+    },
+    {
+      "id": "vinyl-lounge",
+      "name": "Vinyl Lounge",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Walnut and brass: the cover as a spinning record on a turntable, a tonearm that swings in on play and out on pause, the queue as a record crate.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "animated"
+      ],
+      "size": 86428,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/vinyl-lounge",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "097a14ccb35d6d0024b3ed21e11e26fdcc2a55a69b46bd98952143f6b3ac55f6"
+        },
+        {
+          "path": "assets/dmserif/DMSerifDisplay-Regular.ttf",
+          "sha256": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616"
+        },
+        {
+          "path": "assets/dmserif/OFL.txt",
+          "sha256": "a3e5cdd67d4571dd0a24fcc968de0efde7ae97ef752daf0906e4767619dd7231"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "8c7b7be6cd5ba59248bea042b48846cf89cd58c2de9c441fe088b52a24649e19"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "26cc0531ea1fbb7c053893ea36caf694128b356dca90929d208f9b5d7a0f3e0d"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/vinyl-lounge-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/vinyl-lounge-2.png"
+      ]
+    },
+    {
+      "id": "voltage-starter",
+      "name": "Voltage (starter)",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Voltage's own look with every value written out: copy this folder to start a theme.",
+      "licence": "CC0 / see files",
+      "tags": [
+        "dark",
+        "low-cpu"
+      ],
+      "size": 1961,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/voltage-starter",
+      "files": [
+        {
+          "path": "theme.json",
+          "sha256": "cfd69f23e85963bda0a2d41b8291c68b2f49b4315566a42c94eabedcad299add"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/voltage-starter-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/voltage-starter-2.png"
+      ]
+    }
+  ]
+}
