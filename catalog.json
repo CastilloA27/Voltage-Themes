@@ -1,8 +1,8 @@
 {
   "version": 1,
   "kind": "themes",
-  "seq": 2,
-  "expires": 1826159482,
+  "seq": 3,
+  "expires": 1826172585,
   "themes": [
     {
       "id": "aquarium",
@@ -18,7 +18,7 @@
         "animated"
       ],
       "size": 5206,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/aquarium",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/aquarium",
       "files": [
         {
           "path": "CREDITS.md",
@@ -38,8 +38,43 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/aquarium-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/aquarium-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/aquarium-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/aquarium-2.png"
+      ]
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Northern lights in the album's colours over a black sky, a different sky for every song, swaying with the music. The player floats at the bottom so the sky has the window. Needs the \"Aurora sky\" plugin for the lights (graphics card, 30 fps while playing).",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "low-cpu"
+      ],
+      "minVoltage": "1.7.2",
+      "plugin": "aurora-sky",
+      "size": 2720,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/aurora",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "cff67d282855f4d69a11a356dbfa53c6e3eac664102535c42337fdf87fdbfd6a"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "bafc66513f0a30fcfbf805837685dcb24d32d8a4bdee95665a9e49a05cd62717"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "970d46330c09cd28dfa5eea5dc72ce3c34e543ed71e18a1ca6432b8c1e14563d"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/aurora-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/aurora-2.png"
       ]
     },
     {
@@ -56,7 +91,7 @@
         "low-cpu"
       ],
       "size": 118107,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/big-and-clear",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/big-and-clear",
       "files": [
         {
           "path": "CREDITS.md",
@@ -84,8 +119,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/big-and-clear-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/big-and-clear-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/big-and-clear-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/big-and-clear-2.png"
       ]
     },
     {
@@ -102,7 +137,7 @@
         "low-cpu"
       ],
       "size": 194032,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/blueprint",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/blueprint",
       "files": [
         {
           "path": "CREDITS.md",
@@ -134,8 +169,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/blueprint-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/blueprint-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/blueprint-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/blueprint-2.png"
       ]
     },
     {
@@ -152,7 +187,7 @@
         "animated"
       ],
       "size": 413668,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/cassette",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/cassette",
       "files": [
         {
           "path": "CREDITS.md",
@@ -176,8 +211,51 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/cassette-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/cassette-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/cassette-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/cassette-2.png"
+      ]
+    },
+    {
+      "id": "cinema",
+      "name": "Cinema",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A cinema: the cover (or the music video) on a big screen between black bars, the lyrics as subtitles, a title card when a song starts and THE END when it finishes; pages fade through black.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "animated"
+      ],
+      "minVoltage": "1.7.2",
+      "size": 87179,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/cinema",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "1da65b3f7f69b43427c63f5ad3a02272b0eee980c1ba8c63c9afc487c3b25997"
+        },
+        {
+          "path": "assets/dmserif/DMSerifDisplay-Regular.ttf",
+          "sha256": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616"
+        },
+        {
+          "path": "assets/dmserif/OFL.txt",
+          "sha256": "a3e5cdd67d4571dd0a24fcc968de0efde7ae97ef752daf0906e4767619dd7231"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "9b20dc7bbe37220a821c71d527e97766a645b9e9f932411879504b7d7b570f2b"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "63454951d9b67c60d45c6cc0a717e04b904f2f7e0c03f9320b1e14ca7d5b9883"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/cinema-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/cinema-2.png"
       ]
     },
     {
@@ -195,7 +273,7 @@
         "animated"
       ],
       "size": 104110,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/comic",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/comic",
       "files": [
         {
           "path": "CREDITS.md",
@@ -219,8 +297,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/comic-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/comic-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/comic-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/comic-2.png"
       ]
     },
     {
@@ -239,7 +317,7 @@
         "animated"
       ],
       "size": 36568,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/crt-green",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/crt-green",
       "files": [
         {
           "path": "assets/LICENSE.txt",
@@ -271,8 +349,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/crt-green-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/crt-green-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/crt-green-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/crt-green-2.png"
       ]
     },
     {
@@ -290,7 +368,7 @@
         "animated"
       ],
       "size": 146361,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/deep-space",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/deep-space",
       "files": [
         {
           "path": "CREDITS.md",
@@ -314,8 +392,52 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/deep-space-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/deep-space-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/deep-space-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/deep-space-2.png"
+      ]
+    },
+    {
+      "id": "departures",
+      "name": "Departures",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A station departures board: the title flips in on split-flap tiles, the queue is the list of departures with the clock time each song leaves (with the \"Departures board\" plugin), the playing one is boarding, played ones have departed.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "animated"
+      ],
+      "minVoltage": "1.7.2",
+      "plugin": "departures",
+      "size": 149162,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/departures",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "d9e3a212d16eeda8296e08a72c0d60eaf957df8f83719266f47d083d097b6459"
+        },
+        {
+          "path": "assets/plexmono/IBMPlexMono-Regular.ttf",
+          "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+        },
+        {
+          "path": "assets/plexmono/OFL.txt",
+          "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "f623e8a6cbc2dd32d37350666443f3f4ea1d60089e109b1c19de3ac4e796ffc9"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "21d705f320755cafbef8dd79285f980f37a01d8ed8e0acf85877f49b6cf06f52"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/departures-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/departures-2.png"
       ]
     },
     {
@@ -331,7 +453,7 @@
         "low-cpu"
       ],
       "size": 4115,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/e-ink",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/e-ink",
       "files": [
         {
           "path": "theme.css",
@@ -343,8 +465,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/e-ink-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/e-ink-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/e-ink-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/e-ink-2.png"
       ]
     },
     {
@@ -361,7 +483,7 @@
         "low-cpu"
       ],
       "size": 3208,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/frosted-light",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/frosted-light",
       "files": [
         {
           "path": "theme.css",
@@ -373,8 +495,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/frosted-light-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/frosted-light-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/frosted-light-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/frosted-light-2.png"
       ]
     },
     {
@@ -392,7 +514,7 @@
         "low-cpu"
       ],
       "size": 650,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/fx-beat-pulse",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/fx-beat-pulse",
       "files": [
         {
           "path": "CREDITS.md",
@@ -424,7 +546,7 @@
         "low-cpu"
       ],
       "size": 784,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/fx-grain",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/fx-grain",
       "files": [
         {
           "path": "CREDITS.md",
@@ -456,7 +578,7 @@
         "animated"
       ],
       "size": 950,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/fx-snow",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/fx-snow",
       "files": [
         {
           "path": "CREDITS.md",
@@ -487,7 +609,7 @@
         "low-cpu"
       ],
       "size": 128229,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/handheld",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/handheld",
       "files": [
         {
           "path": "CREDITS.md",
@@ -511,16 +633,16 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/handheld-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/handheld-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/handheld-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/handheld-2.png"
       ]
     },
     {
       "id": "jackpot",
       "name": "Jackpot",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "author": "Voltage",
-      "description": "A video slot: a 5 x 3 symbol screen with the cover in the middle, reels that spin on every new song, paylines, coins and JACKPOT when you like a song.",
+      "description": "A video slot: a 5 x 3 symbol screen (or 3 x 3) with the cover in the middle, reels that spin on every new song, a lever that skips, bulbs that flash with the beat, coins on a winning line and BIG WIN when you like a song.",
       "licence": "see CREDITS.md",
       "tags": [
         "dark",
@@ -530,9 +652,10 @@
         "overlay",
         "animated"
       ],
+      "minVoltage": "1.7.2",
       "plugin": "reels",
-      "size": 219501,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/jackpot",
+      "size": 221912,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/jackpot",
       "files": [
         {
           "path": "CREDITS.md",
@@ -580,16 +703,141 @@
         },
         {
           "path": "theme.css",
-          "sha256": "c26fdd1f70e2237f2ceeb2daa7190431469a63b08fbb6a4eb4286239864edaf8"
+          "sha256": "f1e05908bb658b24e089fa960e8669178d6e39c226036110b9fbe28f2c298494"
         },
         {
           "path": "theme.json",
-          "sha256": "1879b08a566711fc1fbeeeb3c381d69e4d53d8affcf2406693d047ec471beb6a"
+          "sha256": "edb447c9370ca3ee882efdd93233972f9fb491ed59957b70f164a86749f48668"
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/jackpot-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/jackpot-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/jackpot-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/jackpot-2.png"
+      ]
+    },
+    {
+      "id": "jrpg",
+      "name": "JRPG",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A turn-based battle: the song is the enemy and its HP is the time left. A wild artist appears, FIGHT plays, RUN skips; with the \"JRPG battle\" plugin seeking hits for damage and you level up as you listen. GAME OVER in the mini player when you die in a match.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "animated"
+      ],
+      "minVoltage": "1.7.2",
+      "plugin": "jrpg-battle",
+      "size": 132338,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/jrpg",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "d994625e059a316e8e39975c3c81eecdbd91bc54402c9f61142ae5e248b3fb96"
+        },
+        {
+          "path": "assets/pressstart/OFL.txt",
+          "sha256": "705960c3281a5765ecc0b59bd4ed7ca59eed165748076bc2fc3e8fdbfeb944b0"
+        },
+        {
+          "path": "assets/pressstart/PressStart2P-Regular.ttf",
+          "sha256": "034c77f1f05ec89421e4a63f0e3a4ca1ecf852cc6d2bf611f126f275728e017d"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "6d29c7a03654d8caaec45ed5f3ae824be59c56148201e96353827d8b5d1a3ec7"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "328ae796e8e7f74c82662822a4858b394224119b2e2310c3aaec0e20a575f279"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/jrpg-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/jrpg-2.png"
+      ]
+    },
+    {
+      "id": "messenger",
+      "name": "Messenger",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "The song as a chat with the artist: lyrics arrive as message bubbles while they are sung (click one to jump there), \"typing…\" before the next song, the queue as your chat list and the player as the message box.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "animated"
+      ],
+      "minVoltage": "1.7.2",
+      "size": 6645,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/messenger",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "ee6516938686cd54f54dd9a1586d9b26a3e49f6d48c5aeb84aa44d5ab09b385a"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "5cbef1d45f7ff2abf5ae3b649b6e64b20b0218bde7d51d27a1c294780fe214f4"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "64d4da2a27b0c3606780d18d940d66e8d79483a83488e6aa594f4bf4f88e9f93"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/messenger-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/messenger-2.png"
+      ]
+    },
+    {
+      "id": "neon-sign",
+      "name": "Neon Sign",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "The song's title as a neon sign on a brick wall: its letters buzz on one by one with every new song, the glow swells with the beat and one tube flickers now and then (never with Reduce flashing). The queue is the bar menu.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "fonts",
+        "animated"
+      ],
+      "minVoltage": "1.7.2",
+      "size": 61692,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/neon-sign",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "a17c1c9f2ca2229f1ae8806aa3858046bbd4526544c71b5289b1852b71537eea"
+        },
+        {
+          "path": "assets/bricks.svg",
+          "sha256": "c2d9edeada21f56dc8d2fd910fac5471e231167f494d8a1e78917d726bb5cfcc"
+        },
+        {
+          "path": "assets/monoton/Monoton-Regular.ttf",
+          "sha256": "951c4cea65ffede784a7c9672feec5d329a7e1e12216c42d53ecf36c90d04dea"
+        },
+        {
+          "path": "assets/monoton/OFL.txt",
+          "sha256": "585c6d2da8bcd8ffa651e0016f2e992a6891b625143a46a1dacf00699a817d9a"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "18d2b6f2af37791d629896b24c7342b51ac622056ac994d90cd13959eb5a04c8"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "c537320f09eb71366ec6c6c214acbc7df245a1da94b3da4935d5b20009c089a7"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/neon-sign-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/neon-sign-2.png"
       ]
     },
     {
@@ -607,7 +855,7 @@
         "animated"
       ],
       "size": 62026,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/night-city",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/night-city",
       "files": [
         {
           "path": "CREDITS.md",
@@ -635,8 +883,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/night-city-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/night-city-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/night-city-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/night-city-2.png"
       ]
     },
     {
@@ -653,7 +901,7 @@
         "low-cpu"
       ],
       "size": 407346,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/paper",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/paper",
       "files": [
         {
           "path": "CREDITS.md",
@@ -685,8 +933,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/paper-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/paper-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/paper-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/paper-2.png"
       ]
     },
     {
@@ -704,7 +952,7 @@
         "low-cpu"
       ],
       "size": 169914,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/pastel-goth",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/pastel-goth",
       "files": [
         {
           "path": "CREDITS.md",
@@ -744,8 +992,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/pastel-goth-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/pastel-goth-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/pastel-goth-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/pastel-goth-2.png"
       ]
     },
     {
@@ -761,7 +1009,7 @@
         "low-cpu"
       ],
       "size": 6196,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/retro-desktop",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/retro-desktop",
       "files": [
         {
           "path": "theme.css",
@@ -773,8 +1021,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/retro-desktop-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/retro-desktop-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/retro-desktop-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/retro-desktop-2.png"
       ]
     },
     {
@@ -790,7 +1038,7 @@
         "animated"
       ],
       "size": 1229,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/season-halloween",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/season-halloween",
       "files": [
         {
           "path": "theme.css",
@@ -802,8 +1050,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/season-halloween-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/season-halloween-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/season-halloween-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/season-halloween-2.png"
       ]
     },
     {
@@ -819,7 +1067,7 @@
         "animated"
       ],
       "size": 1251,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/season-winter",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/season-winter",
       "files": [
         {
           "path": "theme.css",
@@ -831,8 +1079,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/season-winter-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/season-winter-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/season-winter-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/season-winter-2.png"
       ]
     },
     {
@@ -848,7 +1096,7 @@
         "low-cpu"
       ],
       "size": 2062,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/sidebar",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/sidebar",
       "files": [
         {
           "path": "theme.css",
@@ -860,8 +1108,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/sidebar-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/sidebar-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/sidebar-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/sidebar-2.png"
       ]
     },
     {
@@ -877,7 +1125,7 @@
         "low-cpu"
       ],
       "size": 6264,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/spreadsheet",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/spreadsheet",
       "files": [
         {
           "path": "theme.css",
@@ -889,8 +1137,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/spreadsheet-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/spreadsheet-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/spreadsheet-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/spreadsheet-2.png"
       ]
     },
     {
@@ -908,7 +1156,7 @@
       ],
       "plugin": "vu-meter",
       "size": 145774,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/studio",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/studio",
       "files": [
         {
           "path": "CREDITS.md",
@@ -932,8 +1180,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/studio-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/studio-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/studio-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/studio-2.png"
       ]
     },
     {
@@ -952,7 +1200,7 @@
         "animated"
       ],
       "size": 8459569,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/sumi-ink",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/sumi-ink",
       "files": [
         {
           "path": "CREDITS.md",
@@ -1004,8 +1252,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/sumi-ink-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/sumi-ink-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/sumi-ink-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/sumi-ink-2.png"
       ]
     },
     {
@@ -1023,7 +1271,7 @@
         "animated"
       ],
       "size": 238536,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/tactical",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/tactical",
       "files": [
         {
           "path": "CREDITS.md",
@@ -1067,8 +1315,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/tactical-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/tactical-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/tactical-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/tactical-2.png"
       ]
     },
     {
@@ -1086,7 +1334,7 @@
         "animated"
       ],
       "size": 28424,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/terminal",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/terminal",
       "files": [
         {
           "path": "assets/LICENSE.txt",
@@ -1106,8 +1354,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/terminal-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/terminal-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/terminal-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/terminal-2.png"
       ]
     },
     {
@@ -1124,7 +1372,7 @@
         "animated"
       ],
       "size": 86428,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/vinyl-lounge",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/vinyl-lounge",
       "files": [
         {
           "path": "CREDITS.md",
@@ -1148,8 +1396,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/vinyl-lounge-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/vinyl-lounge-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/vinyl-lounge-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/vinyl-lounge-2.png"
       ]
     },
     {
@@ -1164,7 +1412,7 @@
         "low-cpu"
       ],
       "size": 1961,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/voltage-starter",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/voltage-starter",
       "files": [
         {
           "path": "theme.json",
@@ -1172,8 +1420,43 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/voltage-starter-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/voltage-starter-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/voltage-starter-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/voltage-starter-2.png"
+      ]
+    },
+    {
+      "id": "word-rain",
+      "name": "Word Rain",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "The lyrics rain down: every sung word falls behind the player and piles up at the bottom of the window; a new song sweeps the pile away. Needs the \"Word rain\" plugin and synced lyrics.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "dark",
+        "layout",
+        "low-cpu"
+      ],
+      "minVoltage": "1.7.2",
+      "plugin": "word-rain",
+      "size": 3725,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/themes/word-rain",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "ccc412e72dbfeceed915a54f84841c3b89c44dadb8719d6d42570b0fb62f6cfa"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "053d3888ec1caeeb24f90a473d84cd97a00998a55b7b84bbd5a33f35f09b15bc"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "425fca51e1e6ba28327d4c66124dc71ffd869f3d8513edbe2c3d8a1dccea6039"
+        }
+      ],
+      "previews": [
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/word-rain-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/a5bf4be805b0672f90dabb58973283bab35a3a52/previews/word-rain-2.png"
       ]
     }
   ]
