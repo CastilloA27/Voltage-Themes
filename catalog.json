@@ -1,8 +1,8 @@
 {
   "version": 1,
   "kind": "themes",
-  "seq": 1,
-  "expires": 1826120352,
+  "seq": 2,
+  "expires": 1826159482,
   "themes": [
     {
       "id": "aquarium",
@@ -18,7 +18,7 @@
         "animated"
       ],
       "size": 5206,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/aquarium",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/aquarium",
       "files": [
         {
           "path": "CREDITS.md",
@@ -38,8 +38,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/aquarium-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/aquarium-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/aquarium-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/aquarium-2.png"
       ]
     },
     {
@@ -56,7 +56,7 @@
         "low-cpu"
       ],
       "size": 118107,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/big-and-clear",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/big-and-clear",
       "files": [
         {
           "path": "CREDITS.md",
@@ -84,8 +84,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/big-and-clear-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/big-and-clear-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/big-and-clear-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/big-and-clear-2.png"
       ]
     },
     {
@@ -102,7 +102,7 @@
         "low-cpu"
       ],
       "size": 194032,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/blueprint",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/blueprint",
       "files": [
         {
           "path": "CREDITS.md",
@@ -134,8 +134,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/blueprint-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/blueprint-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/blueprint-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/blueprint-2.png"
       ]
     },
     {
@@ -152,7 +152,7 @@
         "animated"
       ],
       "size": 413668,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/cassette",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/cassette",
       "files": [
         {
           "path": "CREDITS.md",
@@ -176,8 +176,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/cassette-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/cassette-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/cassette-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/cassette-2.png"
       ]
     },
     {
@@ -195,7 +195,7 @@
         "animated"
       ],
       "size": 104110,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/comic",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/comic",
       "files": [
         {
           "path": "CREDITS.md",
@@ -219,8 +219,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/comic-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/comic-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/comic-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/comic-2.png"
       ]
     },
     {
@@ -239,7 +239,7 @@
         "animated"
       ],
       "size": 36568,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/crt-green",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/crt-green",
       "files": [
         {
           "path": "assets/LICENSE.txt",
@@ -271,8 +271,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/crt-green-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/crt-green-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/crt-green-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/crt-green-2.png"
       ]
     },
     {
@@ -290,7 +290,7 @@
         "animated"
       ],
       "size": 146361,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/deep-space",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/deep-space",
       "files": [
         {
           "path": "CREDITS.md",
@@ -314,8 +314,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/deep-space-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/deep-space-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/deep-space-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/deep-space-2.png"
       ]
     },
     {
@@ -331,7 +331,7 @@
         "low-cpu"
       ],
       "size": 4115,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/e-ink",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/e-ink",
       "files": [
         {
           "path": "theme.css",
@@ -343,8 +343,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/e-ink-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/e-ink-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/e-ink-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/e-ink-2.png"
       ]
     },
     {
@@ -361,7 +361,7 @@
         "low-cpu"
       ],
       "size": 3208,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/frosted-light",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/frosted-light",
       "files": [
         {
           "path": "theme.css",
@@ -373,9 +373,105 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/frosted-light-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/frosted-light-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/frosted-light-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/frosted-light-2.png"
       ]
+    },
+    {
+      "id": "fx-beat-pulse",
+      "kind": "effect",
+      "name": "Beat pulse",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "The window's edge glows with the beat (at most 3 pulses a second, softer with Reduce flashing).",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "effect",
+        "dark",
+        "overlay",
+        "low-cpu"
+      ],
+      "size": 650,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/fx-beat-pulse",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "d9b12561bb66c88b5a1e56c9aec280e7c466c6e90def91eaf4fef09c539bfa52"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "507e5386d4b191189a01bd4ac59c3012dae1a9af8c3debe90f6db14be7aea378"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "434ed5550fc67ae125bb3e3d4ac85443851f1a417c97886ac8a5413763186090"
+        }
+      ],
+      "previews": []
+    },
+    {
+      "id": "fx-grain",
+      "kind": "effect",
+      "name": "Film grain",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "A soft film grain and vignette over any theme. Still (no animation): costs almost nothing.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "effect",
+        "dark",
+        "overlay",
+        "low-cpu"
+      ],
+      "size": 784,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/fx-grain",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "d9b12561bb66c88b5a1e56c9aec280e7c466c6e90def91eaf4fef09c539bfa52"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "0764604da78375cc51dcce41d6506a96b1359fb459a14f6fde98c83bd6d6ed62"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "ac1e562a56288ece48330d1d1c1a0d9131d81d481fc0247ef48fc202f50f2cdb"
+        }
+      ],
+      "previews": []
+    },
+    {
+      "id": "fx-snow",
+      "kind": "effect",
+      "name": "Snow",
+      "version": "1.0.0",
+      "author": "Voltage",
+      "description": "Slow snowfall over any theme. Pauses with the music.",
+      "licence": "see CREDITS.md",
+      "tags": [
+        "effect",
+        "dark",
+        "overlay",
+        "animated"
+      ],
+      "size": 950,
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/fx-snow",
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "sha256": "d9b12561bb66c88b5a1e56c9aec280e7c466c6e90def91eaf4fef09c539bfa52"
+        },
+        {
+          "path": "theme.css",
+          "sha256": "4597031b9c4f9cb289e4dccf80ca088653ac3c7d199a2e4c2a356cd2e1e3c006"
+        },
+        {
+          "path": "theme.json",
+          "sha256": "482883f07560e026fee78d5638384caad5c1893316a349a5ada1050ebfc10b0f"
+        }
+      ],
+      "previews": []
     },
     {
       "id": "handheld",
@@ -391,7 +487,7 @@
         "low-cpu"
       ],
       "size": 128229,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/handheld",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/handheld",
       "files": [
         {
           "path": "CREDITS.md",
@@ -415,8 +511,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/handheld-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/handheld-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/handheld-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/handheld-2.png"
       ]
     },
     {
@@ -436,7 +532,7 @@
       ],
       "plugin": "reels",
       "size": 219501,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/jackpot",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/jackpot",
       "files": [
         {
           "path": "CREDITS.md",
@@ -492,8 +588,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/jackpot-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/jackpot-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/jackpot-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/jackpot-2.png"
       ]
     },
     {
@@ -511,7 +607,7 @@
         "animated"
       ],
       "size": 62026,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/night-city",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/night-city",
       "files": [
         {
           "path": "CREDITS.md",
@@ -539,8 +635,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/night-city-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/night-city-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/night-city-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/night-city-2.png"
       ]
     },
     {
@@ -557,7 +653,7 @@
         "low-cpu"
       ],
       "size": 407346,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/paper",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/paper",
       "files": [
         {
           "path": "CREDITS.md",
@@ -589,8 +685,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/paper-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/paper-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/paper-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/paper-2.png"
       ]
     },
     {
@@ -608,7 +704,7 @@
         "low-cpu"
       ],
       "size": 169914,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/pastel-goth",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/pastel-goth",
       "files": [
         {
           "path": "CREDITS.md",
@@ -648,8 +744,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/pastel-goth-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/pastel-goth-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/pastel-goth-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/pastel-goth-2.png"
       ]
     },
     {
@@ -665,7 +761,7 @@
         "low-cpu"
       ],
       "size": 6196,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/retro-desktop",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/retro-desktop",
       "files": [
         {
           "path": "theme.css",
@@ -677,8 +773,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/retro-desktop-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/retro-desktop-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/retro-desktop-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/retro-desktop-2.png"
       ]
     },
     {
@@ -694,7 +790,7 @@
         "animated"
       ],
       "size": 1229,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/season-halloween",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/season-halloween",
       "files": [
         {
           "path": "theme.css",
@@ -706,8 +802,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/season-halloween-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/season-halloween-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/season-halloween-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/season-halloween-2.png"
       ]
     },
     {
@@ -723,7 +819,7 @@
         "animated"
       ],
       "size": 1251,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/season-winter",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/season-winter",
       "files": [
         {
           "path": "theme.css",
@@ -735,8 +831,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/season-winter-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/season-winter-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/season-winter-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/season-winter-2.png"
       ]
     },
     {
@@ -752,7 +848,7 @@
         "low-cpu"
       ],
       "size": 2062,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/sidebar",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/sidebar",
       "files": [
         {
           "path": "theme.css",
@@ -764,8 +860,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/sidebar-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/sidebar-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/sidebar-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/sidebar-2.png"
       ]
     },
     {
@@ -781,7 +877,7 @@
         "low-cpu"
       ],
       "size": 6264,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/spreadsheet",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/spreadsheet",
       "files": [
         {
           "path": "theme.css",
@@ -793,8 +889,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/spreadsheet-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/spreadsheet-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/spreadsheet-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/spreadsheet-2.png"
       ]
     },
     {
@@ -812,7 +908,7 @@
       ],
       "plugin": "vu-meter",
       "size": 145774,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/studio",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/studio",
       "files": [
         {
           "path": "CREDITS.md",
@@ -836,8 +932,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/studio-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/studio-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/studio-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/studio-2.png"
       ]
     },
     {
@@ -856,7 +952,7 @@
         "animated"
       ],
       "size": 8459569,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/sumi-ink",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/sumi-ink",
       "files": [
         {
           "path": "CREDITS.md",
@@ -908,8 +1004,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/sumi-ink-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/sumi-ink-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/sumi-ink-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/sumi-ink-2.png"
       ]
     },
     {
@@ -927,7 +1023,7 @@
         "animated"
       ],
       "size": 238536,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/tactical",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/tactical",
       "files": [
         {
           "path": "CREDITS.md",
@@ -971,8 +1067,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/tactical-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/tactical-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/tactical-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/tactical-2.png"
       ]
     },
     {
@@ -990,7 +1086,7 @@
         "animated"
       ],
       "size": 28424,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/terminal",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/terminal",
       "files": [
         {
           "path": "assets/LICENSE.txt",
@@ -1010,8 +1106,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/terminal-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/terminal-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/terminal-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/terminal-2.png"
       ]
     },
     {
@@ -1028,7 +1124,7 @@
         "animated"
       ],
       "size": 86428,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/vinyl-lounge",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/vinyl-lounge",
       "files": [
         {
           "path": "CREDITS.md",
@@ -1052,8 +1148,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/vinyl-lounge-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/vinyl-lounge-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/vinyl-lounge-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/vinyl-lounge-2.png"
       ]
     },
     {
@@ -1068,7 +1164,7 @@
         "low-cpu"
       ],
       "size": 1961,
-      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/themes/voltage-starter",
+      "base": "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/themes/voltage-starter",
       "files": [
         {
           "path": "theme.json",
@@ -1076,8 +1172,8 @@
         }
       ],
       "previews": [
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/voltage-starter-1.png",
-        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/8999278cfd5b8fa78d6832bd56df12001c797b50/previews/voltage-starter-2.png"
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/voltage-starter-1.png",
+        "https://raw.githubusercontent.com/CastilloA27/Voltage-Themes/4e13c106e904ff7b5cc50adce2422e8d02979029/previews/voltage-starter-2.png"
       ]
     }
   ]
