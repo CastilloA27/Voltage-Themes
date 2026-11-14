@@ -271,3 +271,92 @@ write('cinema', {
 [data-part="player.button.play"] { background: var(--accent) !important; color: #120f08 !important; }
 """, files={**ofl('dmserif', 'DMSerifDisplay-Regular.ttf'),
             'CREDITS.md': credits(['Font: DM Serif Display by Colophon Foundry, SIL Open Font License 1.1 (assets/dmserif/OFL.txt).', 'Everything else: made for Voltage, CC0.'])})
+
+
+# ── JRPG: a battle screen. The song is the enemy (its cover), its HP the time left (--progress, F3); F14 "A wild {artist}
+#    appears!" (info.kicker); F5 the battle menu (FIGHT = play, ITEM = like, RUN = next, MAGIC = shuffle) as hotspots on a
+#    layout area; with the "JRPG battle" helper: F6 damage numbers when you seek forward, F2 the enemy flashes when hit, F1
+#    your level and experience across days; F17 GAME OVER in the mini player when you die in a match. Original art. ──
+WIN = 'background: linear-gradient(#2c46b8, #121c66) !important; border: 3px solid #f4f4ff !important; border-radius: 9px !important; box-shadow: 0 0 0 3px #0b1040, inset 0 0 0 2px #0b1040 !important;'
+write('jrpg', {
+    'id': 'jrpg', 'name': 'JRPG', 'version': '1.0.0', 'author': 'Voltage', 'extends': 'voltage', 'appearance': 'dark', 'minVoltage': '1.7.2',
+    'description': 'A turn-based battle: the song is the enemy and its HP is the time left. A wild artist appears, FIGHT plays, RUN skips; '
+                   'with the "JRPG battle" plugin seeking hits for damage and you level up as you listen. GAME OVER in the mini player when you die in a match.',
+    'fonts': [{'family': 'Press Start 2P', 'src': 'assets/pressstart/PressStart2P-Regular.ttf'}],
+    'plugin': 'jrpg-battle',
+    'tokens': {'color.bg': '#05071a', 'color.text': '#f4f4ff', 'color.text-dim': '#b9bde8', 'color.surface': '#121c66', 'color.border': '#f4f4ff',
+               'color.brand': '#ffd84a', 'color.on-accent': '#121c66', 'effect.blur': '0px', 'effect.glow-size': '0px', 'effect.glow-alpha': '0%',
+               'accent.album-mix': '0', 'shape.radius': '9px'},
+    'accent': {'mode': 'fixed', 'color': '#ffd84a'},
+    'supports': {'background': ['black']},
+    'parts': {'tracklist': {'variant': 'dense'}},
+    'strings': {'info.kicker': 'A wild {artist} appears!', 'nowplaying.idle': 'No enemies in sight', 'tab.queue': 'Party', 'tab.search': 'Map',
+                'tab.library': 'Items', 'player.next': 'Run', 'player.play': 'Fight', 'empty.queue': 'Your party is empty', 'lyrics.none': '…',
+                'lyrics.instrumental': 'The enemy hums menacingly.'},
+    'sprites': {'dmg': {'class': 'dmg', 'life': 1100}},
+    'hotspots': [{'id': 'fight', 'part': 'area:menu', 'rect': ['4%', '8%', '46%', '42%'], 'action': 'play-pause', 'label': 'FIGHT (play / pause)'},
+                 {'id': 'item', 'part': 'area:menu', 'rect': ['50%', '8%', '46%', '42%'], 'action': 'like', 'label': 'ITEM (like)'},
+                 {'id': 'run', 'part': 'area:menu', 'rect': ['4%', '50%', '46%', '42%'], 'action': 'next', 'label': 'RUN (next song)'},
+                 {'id': 'magic', 'part': 'area:menu', 'rect': ['50%', '50%', '46%', '42%'], 'action': 'shuffle', 'label': 'MAGIC (shuffle)'}],
+    'layout': {'home': {
+        'areas': ['side info info', 'side enemy enemy', 'side text menu', 'side prog prog', 'bar bar bar'],
+        'columns': 'minmax(220px, 280px) minmax(0, 1fr) 230px', 'rows': 'auto minmax(0, 1fr) 112px 30px 70px',
+        'place': {'side': 'sidebar', 'info': 'info', 'enemy': 'art', 'text': 'lyrics', 'menu': 'spacer', 'prog': 'progress', 'bar': 'player'}, 'resizable': ['side']}},
+}, css=r"""
+[data-part="background"] { opacity: 1 !important; background: radial-gradient(ellipse 80% 40% at 50% 62%, #1d2a6a, transparent 70%), linear-gradient(#05071a 0 55%, #0d1430 55%) !important; }
+.lay-sidebar, .lay-info, .lay-lyrics, .lay-spacer, .lay-player, .lay-progress { """ + WIN + r""" }
+/* the pixel font for the battle boxes; the party list keeps a readable font, its titles pixel */
+.lay-info, .lay-lyrics, .lay-spacer { font-family: "Press Start 2P", monospace; }
+.lay-sidebar [data-part="tracklist.row.title"] { font-family: "Press Start 2P", monospace; font-size: 9px; line-height: 1.7; }
+/* the enemy: the cover floating over the battlefield, flashing when hit */
+.lay-art { background: none !important; border: none !important; box-shadow: none !important; display: grid; place-items: center; container-type: size; }
+.lay-art .art-part { display: grid; place-items: center; width: 100%; height: 100%; }
+.lay-art img { width: min(62cqw, 72cqh) !important; height: min(62cqw, 72cqh) !important; border-radius: 6px !important; box-shadow: 0 18px 0 -6px rgb(0 0 0 / .45) !important;
+  animation: enemy-bob 2.4s ease-in-out infinite; }
+@keyframes enemy-bob { 50% { transform: translateY(-8px); } }
+[data-part="art"][data-fx~="hit"] img { animation: enemy-hit .45s steps(2) !important; }
+@keyframes enemy-hit { 0%, 50% { filter: brightness(3) saturate(0); transform: translateX(-8px); } 25%, 75% { transform: translateX(8px); } }
+:root[data-reduce-flash] [data-part="art"][data-fx~="hit"] img { animation: none !important; }
+.reduce-motion .lay-art img { animation: none !important; }
+/* the enemy's name and HP: the time left (--progress from Voltage), green to red */
+.lay-info { padding: 10px 16px !important; }
+.lay-info .info-part { align-items: flex-start !important; text-align: left !important; }
+.lay-info [data-part="info.kicker"] { margin: 0 0 6px; font-size: 11px; color: #ffd84a; }
+.lay-info [data-part="info.title"] { font: 400 15px/1.5 "Press Start 2P", monospace !important; color: #fff; margin: 0 !important; }
+.lay-info .song-actions, .lay-info [data-part="info.actions"], .lay-info .song-sub { display: none !important; }
+.lay-info::after { content: "HP"; display: block; margin-top: 8px; padding-left: 34px; font-size: 10px; color: #ffd84a; height: 12px;
+  background: linear-gradient(hsl(calc((1 - var(--progress, 0)) * 120) 85% 50%), hsl(calc((1 - var(--progress, 0)) * 120) 85% 40%)) 34px 0 / calc((100% - 34px) * (1 - var(--progress, 0))) 100% no-repeat,
+    linear-gradient(#2a2a3a, #2a2a3a) 34px 0 / calc(100% - 34px) 100% no-repeat; }
+/* your level and experience (the helper), over the party list */
+:root[style*="--fx-lv"] .lay-sidebar::before { counter-reset: lv var(--fx-lv); content: "LV " counter(lv); display: block; margin: 4px 6px 8px; font: 400 11px "Press Start 2P", monospace; color: #ffd84a;
+  background: linear-gradient(#5fd4ff, #2a8acc) 0 100% / calc(var(--fx-exp, 0) * 100%) 3px no-repeat, linear-gradient(#2a2a3a, #2a2a3a) 0 100% / 100% 3px no-repeat; padding-bottom: 6px; }
+[data-part="app"][data-fx~="level-up"] .lay-sidebar::before { color: #fff; animation: lvup .5s steps(2) 3; }
+@keyframes lvup { 50% { color: #ffd84a; } }
+/* the text box: the line being sung */
+.lay-lyrics .lyrics { display: flex; align-items: center; height: 100%; padding: 30px 16px 8px !important; mask-image: none !important; -webkit-mask-image: none !important; overflow: hidden !important; }
+.lay-lyrics [data-part="lyrics.line"] { display: none; }
+.lay-lyrics [data-part="lyrics.line"][data-state~="active"] { display: block; margin: 0 !important; font: 400 12px/1.8 "Press Start 2P", monospace !important; color: #fff !important; text-align: left;
+  transform: none !important; filter: none !important; opacity: 1 !important; }
+.lay-lyrics [data-part="lyrics.line"][data-state~="active"]::after { content: " ▼"; color: #ffd84a; animation: more 1s steps(2) infinite; }
+@keyframes more { 50% { opacity: 0; } }
+.lay-lyrics .lyrics-src, .lay-lyrics .ly-offset, .lay-lyrics .rom, .lay-lyrics .tr { display: none !important; }
+/* the battle menu (its four choices are hotspots: FIGHT, ITEM, RUN, MAGIC) */
+.lay-spacer { position: relative; }
+.lay-spacer::before, .lay-spacer::after { position: absolute; left: 0; right: 0; height: 46%; display: flex; align-items: center; justify-content: space-around; font: 400 12px "Press Start 2P", monospace; color: #fff; white-space: pre; }
+.lay-spacer::before { content: "FIGHT      ITEM"; top: 4%; }
+.lay-spacer::after { content: " RUN      MAGIC"; bottom: 4%; }
+[data-part="hotspot"][data-hotspot] { border-radius: 4px; }
+[data-part="hotspot"][data-hotspot]:hover::before, [data-part="hotspot"][data-hotspot]:focus-visible::before { content: "▶"; position: absolute; left: 2px; top: 50%; transform: translateY(-50%); color: #ffd84a; font: 10px "Press Start 2P", monospace; }
+/* damage numbers (the helper's "dmg" sprites) */
+.fx-dmg { font: 400 22px "Press Start 2P", monospace; color: #fff; text-shadow: 3px 3px 0 #b3122a, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; white-space: nowrap;
+  transform: translateX(-50%); animation: dmg 1.1s cubic-bezier(.2, 1.6, .5, 1) forwards; }
+@keyframes dmg { 0% { transform: translate(-50%, 10px) scale(.6); opacity: 0; } 15% { transform: translate(-50%, -26px) scale(1.15); opacity: 1; } 35% { transform: translate(-50%, -16px) scale(1); }
+  80% { opacity: 1; } 100% { transform: translate(-50%, -30px); opacity: 0; } }
+/* F17: GAME OVER in the mini player when you die in a match */
+:root[data-game="dead"] [data-part="view.mini"] { position: relative; }
+:root[data-game="dead"] [data-part="view.mini"]::after { content: "GAME OVER"; position: absolute; inset: 0; display: grid; place-items: center; z-index: 5;
+  font: 400 16px "Press Start 2P", monospace; color: #e8243c; background: rgb(0 0 0 / .78); letter-spacing: .1em; }
+[data-part="player.button.play"] { background: #ffd84a !important; color: #121c66 !important; border-radius: 6px !important; }
+""", files={**ofl('pressstart', 'PressStart2P-Regular.ttf'),
+            'CREDITS.md': credits(['Font: Press Start 2P by CodeMan38, SIL Open Font License 1.1 (assets/pressstart/OFL.txt).',
+                                   'Everything else: made for Voltage, CC0 (no game characters, art or names). Damage, running away and levels come from the "JRPG battle" plugin.'])})

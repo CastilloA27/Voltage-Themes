@@ -1,0 +1,140 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "jrpg",
+  "name": "JRPG",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "minVoltage": "1.7.2",
+  "description": "A turn-based battle: the song is the enemy and its HP is the time left. A wild artist appears, FIGHT plays, RUN skips; with the \"JRPG battle\" plugin seeking hits for damage and you level up as you listen. GAME OVER in the mini player when you die in a match.",
+  "fonts": [
+    {
+      "family": "Press Start 2P",
+      "src": "assets/pressstart/PressStart2P-Regular.ttf"
+    }
+  ],
+  "plugin": "jrpg-battle",
+  "tokens": {
+    "color.bg": "#05071a",
+    "color.text": "#f4f4ff",
+    "color.text-dim": "#b9bde8",
+    "color.surface": "#121c66",
+    "color.border": "#f4f4ff",
+    "color.brand": "#ffd84a",
+    "color.on-accent": "#121c66",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0",
+    "shape.radius": "9px"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#ffd84a"
+  },
+  "supports": {
+    "background": [
+      "black"
+    ]
+  },
+  "parts": {
+    "tracklist": {
+      "variant": "dense"
+    }
+  },
+  "strings": {
+    "info.kicker": "A wild {artist} appears!",
+    "nowplaying.idle": "No enemies in sight",
+    "tab.queue": "Party",
+    "tab.search": "Map",
+    "tab.library": "Items",
+    "player.next": "Run",
+    "player.play": "Fight",
+    "empty.queue": "Your party is empty",
+    "lyrics.none": "…",
+    "lyrics.instrumental": "The enemy hums menacingly."
+  },
+  "sprites": {
+    "dmg": {
+      "class": "dmg",
+      "life": 1100
+    }
+  },
+  "hotspots": [
+    {
+      "id": "fight",
+      "part": "area:menu",
+      "rect": [
+        "4%",
+        "8%",
+        "46%",
+        "42%"
+      ],
+      "action": "play-pause",
+      "label": "FIGHT (play / pause)"
+    },
+    {
+      "id": "item",
+      "part": "area:menu",
+      "rect": [
+        "50%",
+        "8%",
+        "46%",
+        "42%"
+      ],
+      "action": "like",
+      "label": "ITEM (like)"
+    },
+    {
+      "id": "run",
+      "part": "area:menu",
+      "rect": [
+        "4%",
+        "50%",
+        "46%",
+        "42%"
+      ],
+      "action": "next",
+      "label": "RUN (next song)"
+    },
+    {
+      "id": "magic",
+      "part": "area:menu",
+      "rect": [
+        "50%",
+        "50%",
+        "46%",
+        "42%"
+      ],
+      "action": "shuffle",
+      "label": "MAGIC (shuffle)"
+    }
+  ],
+  "layout": {
+    "home": {
+      "areas": [
+        "side info info",
+        "side enemy enemy",
+        "side text menu",
+        "side prog prog",
+        "bar bar bar"
+      ],
+      "columns": "minmax(220px, 280px) minmax(0, 1fr) 230px",
+      "rows": "auto minmax(0, 1fr) 112px 30px 70px",
+      "place": {
+        "side": "sidebar",
+        "info": "info",
+        "enemy": "art",
+        "text": "lyrics",
+        "menu": "spacer",
+        "prog": "progress",
+        "bar": "player"
+      },
+      "resizable": [
+        "side"
+      ]
+    }
+  },
+  "css": "theme.css"
+}
