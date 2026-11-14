@@ -35,6 +35,15 @@ store** reads. Themes contain no code; Voltage checks every file again when it i
 | Night City | rain over neon, the title as a buzzing sign, a glitch on every track change | sign over cover + list |
 | Studio | a mixing desk: two VU meters (needles move with the music with the **VU meter** plugin), rack-mounted player | channel list + meters |
 | Halloween, Winter | tiny seasonal themes (a palette and an overlay on Voltage): how small a theme can be | Voltage's |
+| **Theme FX wave 1** (need Voltage 1.7.2; most need their plugin from Settings > Plugins) | | |
+| Aurora | northern lights in the album's colours over a black sky, a different sky per song (WebGL, **Aurora sky** plugin) | the sky gets the window, the player floats |
+| Neon Sign | the title as a neon sign on a brick wall: letters buzz on, the glow swells with the beat, a tube flickers (off with Reduce flashing) | the sign over everything, the queue as the bar menu |
+| Departures | a station board: the title on split-flap tiles, the queue as departures with clock times (**Departures board** plugin) | board + platform poster |
+| Messenger | the song as a chat with the artist: lyrics arrive as bubbles, typing… before the next song | chat list / header / chat |
+| Cinema | a screen between black bars, lyrics as subtitles, a title card and THE END, pages fade through black | screen / subtitles / program |
+| JRPG | a turn-based battle: the song is the enemy, HP is the time left, FIGHT / ITEM / RUN / MAGIC; seeking hits for damage and you level up (**JRPG battle** plugin) | party / enemy / text box / menu |
+| Word Rain | every sung word falls behind the player and piles up (**Word rain** plugin) | a quiet stage |
+| Jackpot 3 | Jackpot with a lever that skips, coins on a winning line, bulbs on the beat, 5 or 3 reels (the **Reels** plugin) | the cabinet |
 
 Theme sources that aren't copies of Voltage-Plugins' examples are made by `tools/make-store.py`.
 
