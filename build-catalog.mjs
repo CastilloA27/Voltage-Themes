@@ -60,7 +60,8 @@ for (const id of fs.readdirSync(path.join(root, 'themes')).sort()) {
   const licence = fs.existsSync(path.join(dir, 'CREDITS.md')) ? 'see CREDITS.md' : 'CC0 / see files';
   const previews = fs.readdirSync(path.join(root, 'previews')).filter((f) => f.startsWith(`${id}-`) && f.endsWith('.png')).sort()
     .map((f) => `${base}/previews/${f}`);
-  themes.push({ id, name: m.name, version: m.version, author: m.author ?? '', description: m.description ?? '', licence, tags,
+  if (m.kind === 'effect') tags.unshift('effect');
+  themes.push({ id, ...(m.kind === 'effect' ? { kind: 'effect' } : {}), name: m.name, version: m.version, author: m.author ?? '', description: m.description ?? '', licence, tags,
     ...(m.minVoltage ? { minVoltage: m.minVoltage } : {}), ...(m.plugin ? { plugin: m.plugin } : {}),
     size: files.reduce((a, f) => a + f.size, 0), base: `${base}/themes/${id}`, files: files.map(({ path: p, sha256 }) => ({ path: p, sha256 })), previews });
 }
