@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "departures",
+  "name": "Departures",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "minVoltage": "1.7.2",
+  "description": "A station departures board: the title flips in on split-flap tiles, the queue is the list of departures with the clock time each song leaves (with the \"Departures board\" plugin), the playing one is boarding, played ones have departed.",
+  "fonts": [
+    {
+      "family": "IBM Plex Mono",
+      "src": "assets/plexmono/IBMPlexMono-Regular.ttf"
+    }
+  ],
+  "plugin": "departures",
+  "split": [
+    "info.title"
+  ],
+  "tokens": {
+    "color.bg": "#050505",
+    "color.text": "#f2f2f2",
+    "color.text-dim": "#9a9a9a",
+    "color.text-strong": "#ffffff",
+    "color.surface": "#0c0c0c",
+    "color.border": "#262626",
+    "color.brand": "#ffc93c",
+    "color.on-accent": "#111111",
+    "color.select-bg": "#3a2e0c",
+    "surface.menu": "#121212",
+    "surface.pop": "#121212",
+    "surface.tip": "#121212",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0",
+    "shape.radius": "3px",
+    "font.mono": "\"IBM Plex Mono\", Consolas, monospace"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#ffc93c"
+  },
+  "supports": {
+    "background": [
+      "black"
+    ]
+  },
+  "parts": {
+    "progress": {
+      "variant": "line"
+    },
+    "tracklist": {
+      "variant": "dense"
+    }
+  },
+  "strings": {
+    "tab.queue": "Departures",
+    "tab.search": "Timetable",
+    "nowplaying.idle": "No departures",
+    "empty.queue": "No further departures today",
+    "player.next": "Next departure",
+    "player.prev": "Previous departure",
+    "nowplaying.cover": "Platform {index} of {count}"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "info info",
+        "board art",
+        "prog prog",
+        "bar bar"
+      ],
+      "columns": "minmax(0, 1fr) minmax(200px, 30%)",
+      "rows": "minmax(110px, auto) minmax(0, 1fr) 40px 76px",
+      "place": {
+        "info": "info",
+        "board": "sidebar",
+        "art": "art",
+        "prog": "progress",
+        "bar": "player"
+      },
+      "resizable": [
+        "board"
+      ]
+    }
+  },
+  "css": "theme.css"
+}
