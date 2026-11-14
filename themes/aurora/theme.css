@@ -1,0 +1,10 @@
+[data-part="background"] { background: #000 !important; opacity: 1 !important; }
+/* the sky is the point: panels are thin glass, the empty middle is left to it */
+.lay-area { background-color: rgb(0 0 0 / .22) !important; border-color: rgb(255 255 255 / .06) !important; box-shadow: none !important; }
+.lay-art { background: none !important; border: none !important; }
+.lay-art img { border-radius: 50% !important; box-shadow: 0 0 24px color-mix(in srgb, var(--accent) 45%, transparent) !important; }
+.lay-info { background: none !important; border: none !important; align-self: center; }
+.lay-info [data-part="info.title"] { font-weight: 300; font-size: 26px; letter-spacing: .02em; text-shadow: 0 0 18px color-mix(in srgb, var(--accent) 50%, transparent); }
+.lay-player { border-radius: 38px !important; margin: 0 8% 10px; }
+.lay-progress { background: none !important; border: none !important; }
+[data-part="app"]:not([data-state~="playing"]) .lay-info [data-part="info.title"] { opacity: .75; }
