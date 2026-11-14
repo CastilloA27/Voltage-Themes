@@ -1,0 +1,61 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "word-rain",
+  "name": "Word Rain",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "minVoltage": "1.7.2",
+  "description": "The lyrics rain down: every sung word falls behind the player and piles up at the bottom of the window; a new song sweeps the pile away. Needs the \"Word rain\" plugin and synced lyrics.",
+  "plugin": "word-rain",
+  "tokens": {
+    "color.bg": "#08080b",
+    "color.text": "#f1f1f4",
+    "color.text-dim": "#9c9ca8",
+    "color.surface": "rgba(8, 8, 11, .35)",
+    "color.border": "rgba(255, 255, 255, .07)",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "1",
+    "shape.radius": "14px"
+  },
+  "supports": {
+    "background": [
+      "black"
+    ]
+  },
+  "strings": {
+    "nowplaying.idle": "Clear skies",
+    "lyrics.none": "No words to fall",
+    "lyrics.instrumental": "…",
+    "lyrics.loading": "…"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "side art info",
+        "side stage stage",
+        "side line line",
+        "side prog prog",
+        "bar bar bar"
+      ],
+      "columns": "minmax(220px, 280px) 72px minmax(0, 1fr)",
+      "rows": "72px minmax(0, 1fr) 84px 34px 72px",
+      "place": {
+        "side": "sidebar",
+        "art": "art",
+        "info": "info",
+        "stage": "spacer",
+        "line": "lyrics",
+        "prog": "progress",
+        "bar": "player"
+      },
+      "resizable": [
+        "side"
+      ]
+    }
+  },
+  "css": "theme.css"
+}

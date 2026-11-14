@@ -360,3 +360,41 @@ write('jrpg', {
 """, files={**ofl('pressstart', 'PressStart2P-Regular.ttf'),
             'CREDITS.md': credits(['Font: Press Start 2P by CodeMan38, SIL Open Font License 1.1 (assets/pressstart/OFL.txt).',
                                    'Everything else: made for Voltage, CC0 (no game characters, art or names). Damage, running away and levels come from the "JRPG battle" plugin.'])})
+
+
+# ── Word Rain: F7 physics (the "Word rain" helper drops the sung line's words into the background layer, where they pile up)
+#    + F6-style word sprites in canvas. A quiet stage: the panels are see-through so the pile shows behind them. ──
+write('word-rain', {
+    'id': 'word-rain', 'name': 'Word Rain', 'version': '1.0.0', 'author': 'Voltage', 'extends': 'voltage', 'appearance': 'dark', 'minVoltage': '1.7.2',
+    'description': "The lyrics rain down: every sung word falls behind the player and piles up at the bottom of the window; a new song "
+                   'sweeps the pile away. Needs the "Word rain" plugin and synced lyrics.',
+    'plugin': 'word-rain',
+    'tokens': {'color.bg': '#08080b', 'color.text': '#f1f1f4', 'color.text-dim': '#9c9ca8', 'color.surface': 'rgba(8, 8, 11, .35)',
+               'color.border': 'rgba(255, 255, 255, .07)', 'effect.blur': '0px', 'effect.glow-size': '0px', 'effect.glow-alpha': '0%',
+               'accent.album-mix': '1', 'shape.radius': '14px'},
+    'supports': {'background': ['black']},
+    'strings': {'nowplaying.idle': 'Clear skies', 'lyrics.none': 'No words to fall', 'lyrics.instrumental': '…', 'lyrics.loading': '…'},
+    'layout': {'home': {
+        'areas': ['side art info', 'side stage stage', 'side line line', 'side prog prog', 'bar bar bar'],
+        'columns': 'minmax(220px, 280px) 72px minmax(0, 1fr)', 'rows': '72px minmax(0, 1fr) 84px 34px 72px',
+        'place': {'side': 'sidebar', 'art': 'art', 'info': 'info', 'stage': 'spacer', 'line': 'lyrics', 'prog': 'progress', 'bar': 'player'}, 'resizable': ['side']}},
+}, css=r"""
+.lay-area { background-color: rgb(8 8 11 / .35) !important; box-shadow: none !important; }
+/* where the controls are, the rain stays behind a nearly solid panel (readable); the stage in the middle is clear */
+.lay-sidebar, .lay-player, .lay-progress { background-color: rgb(10 10 14 / .96) !important; }
+.lay-spacer { background: none !important; border: none !important; }
+.lay-art, .lay-info { background: none !important; border: none !important; }
+.lay-art { display: grid; place-items: center; padding: 0 !important; }
+.lay-art img { width: 56px !important; height: 56px !important; min-width: 56px; aspect-ratio: 1; border-radius: 10px !important; object-fit: cover; box-shadow: none !important; }
+.lay-info { display: flex; align-items: center; }
+.lay-info .info-part { align-items: flex-start !important; text-align: left !important; padding: 0 !important; margin: 0 !important; }
+.lay-info [data-part="info.title"] { font-size: 20px !important; font-weight: 800; letter-spacing: -.01em; margin: 0 !important; }
+.lay-info .song-actions, .lay-info [data-part="info.actions"] { display: none !important; }
+/* the line being sung, big; the rest is in the rain */
+.lay-lyrics { background: none !important; border: none !important; }
+.lay-lyrics .lyrics { display: grid; place-items: center; height: 100%; padding: 0 16px !important; mask-image: none !important; -webkit-mask-image: none !important; overflow: hidden !important; }
+.lay-lyrics [data-part="lyrics.line"] { display: none; }
+.lay-lyrics [data-part="lyrics.line"][data-state~="active"] { display: block; margin: 0 !important; font-size: 24px !important; font-weight: 800; color: var(--accent) !important; text-align: center;
+  transform: none !important; filter: none !important; opacity: 1 !important; text-shadow: 0 2px 18px rgb(0 0 0 / .8); }
+.lay-lyrics .lyrics-src, .lay-lyrics .ly-offset { display: none !important; }
+""", files={'CREDITS.md': credits(['Made for Voltage, CC0. The falling words come from the "Word rain" plugin (Settings > Plugins).'])})
