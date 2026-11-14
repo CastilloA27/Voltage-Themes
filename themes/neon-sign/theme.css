@@ -1,0 +1,27 @@
+/* the wall: dark bricks, lit from the sign above */
+[data-part="background"] { opacity: 1 !important; background-color: #140a0e !important;
+  background-image: radial-gradient(ellipse 70% 45% at 50% 0%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 70%),
+    url("assets/bricks.svg") !important;
+  background-size: 100% 100%, 96px 48px !important; background-position: 0 0, 0 0 !important; }
+.lay-area { background-color: rgb(10 4 8 / .72) !important; box-shadow: none !important; }
+.lay-info { background: none !important; border: none !important; display: grid; place-items: center; text-align: center; }
+/* the sign: tubes in the accent colour, a glow that swells with the beat (--fx-beat 0-1) */
+.lay-info [data-part="info.title"] { font: 400 clamp(26px, 5.2vw, 60px)/1.15 "Monoton", sans-serif; letter-spacing: .04em; color: #fff4fb;
+  --glow: calc(8px + var(--fx-beat, 0) * 14px);
+  text-shadow: 0 0 4px #fff, 0 0 var(--glow) var(--accent), 0 0 calc(var(--glow) * 2.2) var(--accent), 0 0 calc(var(--glow) * 4) color-mix(in srgb, var(--accent) 60%, transparent); }
+.lay-info .split .ch { display: inline-block; animation: tube-on .9s steps(1, end) both; animation-delay: calc(var(--i) * 70ms); }
+@keyframes tube-on { 0% { opacity: .08; text-shadow: none; } 30% { opacity: 1; } 38% { opacity: .15; text-shadow: none; } 52% { opacity: 1; } 60% { opacity: .3; } 70%, 100% { opacity: 1; } }
+/* one tube in every seven flickers briefly, every few seconds (2 dips in 10 s: well under 3 a second) */
+.lay-info .split .ch:nth-child(7n+4) { animation: tube-on .9s steps(1, end) both, tube-flicker 10s steps(1, end) 2s infinite; animation-delay: calc(var(--i) * 70ms), calc(2s + var(--i) * 300ms); }
+@keyframes tube-flicker { 0%, 91% { opacity: 1; } 92% { opacity: .2; } 93% { opacity: 1; } 95% { opacity: .35; } 96%, 100% { opacity: 1; } }
+:root[data-reduce-flash] .lay-info .split .ch, .reduce-motion .lay-info .split .ch { animation: none !important; opacity: 1; }
+[data-part="app"]:not([data-state~="playing"]) .lay-info [data-part="info.title"] { --glow: 4px; opacity: .55; }
+.lay-info [data-part="info.sub"], .lay-info .song-sub { color: #ffd6ee; text-shadow: 0 0 8px color-mix(in srgb, var(--accent) 60%, transparent); }
+/* the brand in the title bar: a small sign too */
+[data-part="titlebar.brand"] { font-family: "Monoton", sans-serif !important; color: #fff4fb !important; text-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent); }
+/* the cover: a lit poster in a frame, fitted to its cell */
+.lay-art { display: grid; place-items: center; min-height: 0; overflow: hidden; container-type: size; }
+.lay-art .art-part { display: grid; place-items: center; width: 100%; height: 100%; min-height: 0; }
+.lay-art img { width: min(88cqw, 88cqh) !important; height: min(88cqw, 88cqh) !important; object-fit: cover; border: 3px solid #2a1420 !important; box-shadow: 0 0 0 1px var(--accent), 0 0 30px color-mix(in srgb, var(--accent) 40%, transparent) !important; border-radius: 4px !important; }
+/* the menu: chalk-white rows, the playing one lit */
+[data-part="tracklist.row"][data-state~="active"] { box-shadow: inset 3px 0 0 var(--accent), 0 0 18px color-mix(in srgb, var(--accent) 30%, transparent) !important; }

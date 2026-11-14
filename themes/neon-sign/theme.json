@@ -1,0 +1,73 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "neon-sign",
+  "name": "Neon Sign",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "minVoltage": "1.7.2",
+  "description": "The song's title as a neon sign on a brick wall: its letters buzz on one by one with every new song, the glow swells with the beat and one tube flickers now and then (never with Reduce flashing). The queue is the bar menu.",
+  "fonts": [
+    {
+      "family": "Monoton",
+      "src": "assets/monoton/Monoton-Regular.ttf"
+    }
+  ],
+  "uses": [
+    "beat"
+  ],
+  "split": [
+    "info.title",
+    "titlebar.brand"
+  ],
+  "tokens": {
+    "color.bg": "#0d0709",
+    "color.text": "#ffeef8",
+    "color.text-dim": "#d9b3c9",
+    "color.surface": "rgba(18, 8, 14, .78)",
+    "color.border": "rgba(255, 60, 200, .28)",
+    "effect.blur": "6px",
+    "effect.glow-size": "22px",
+    "effect.glow-alpha": "70%",
+    "accent.album-mix": "0.35",
+    "shape.radius": "10px"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#ff3cc8"
+  },
+  "supports": {
+    "background": [
+      "gradient"
+    ]
+  },
+  "strings": {
+    "nowplaying.idle": "CLOSED",
+    "tab.queue": "Menu",
+    "empty.queue": "Nothing on tonight"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "sign sign",
+        "menu art",
+        "menu prog",
+        "bar bar"
+      ],
+      "columns": "minmax(240px, 310px) minmax(0, 1fr)",
+      "rows": "minmax(120px, auto) minmax(0, 1fr) 40px 78px",
+      "place": {
+        "sign": "info",
+        "menu": "sidebar",
+        "art": "art",
+        "prog": "progress",
+        "bar": "player"
+      },
+      "resizable": [
+        "menu"
+      ]
+    }
+  },
+  "css": "theme.css"
+}
