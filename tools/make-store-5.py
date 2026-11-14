@@ -150,3 +150,65 @@ body, .lay-area, [data-part="tracklist"] { font-family: "IBM Plex Mono", Consola
 """, files={**ofl('plexmono', 'IBMPlexMono-Regular.ttf'),
             'CREDITS.md': credits(['Font: IBM Plex Mono by IBM, SIL Open Font License 1.1 (assets/plexmono/OFL.txt).',
                                    'Everything else: made for Voltage, CC0. The departure times come from the "Departures board" plugin (Settings > Plugins); without it the board shows --:--.'])})
+
+# ── Messenger: the song as a chat with the artist. Lyrics arrive as message bubbles as they're sung (future lines aren't
+#    "sent" yet), click one to jump there (built in), F3 phases ("typing…" in the last seconds: the next song is coming),
+#    F14 labels ("{artist} is typing…", "{artist} sent a voice message"). The queue is the chat list. Original look: no
+#    other app's colours, logo or layout copied. ──
+write('messenger', {
+    'id': 'messenger', 'name': 'Messenger', 'version': '1.0.0', 'author': 'Voltage', 'extends': 'voltage', 'appearance': 'dark', 'minVoltage': '1.7.2',
+    'description': 'The song as a chat with the artist: lyrics arrive as message bubbles while they are sung (click one to jump there), '
+                   '"typing…" before the next song, the queue as your chat list and the player as the message box.',
+    'tokens': {'color.bg': '#0f1115', 'color.text': '#eef1f6', 'color.text-dim': '#9aa3b2', 'color.surface': '#171a21', 'color.border': '#252a34',
+               'effect.blur': '0px', 'effect.glow-size': '0px', 'effect.glow-alpha': '0%', 'accent.album-mix': '0.6', 'shape.radius': '16px'},
+    'supports': {'background': ['black']},
+    'strings': {'tab.queue': 'Chats', 'tab.search': 'Find', 'tab.library': 'Saved', 'nowplaying.idle': 'No new messages',
+                'lyrics.loading': '{artist} is typing…', 'lyrics.none': '{artist} sent a song without words',
+                'lyrics.instrumental': '{artist} sent a voice message', 'player.next': 'Next chat', 'player.prev': 'Previous chat',
+                'empty.queue': 'No chats yet'},
+    'layout': {'home': {
+        'areas': ['side ava head', 'side chat chat', 'side prog prog', 'side bar bar'],
+        'columns': 'minmax(240px, 300px) 64px minmax(0, 1fr)', 'rows': '64px minmax(0, 1fr) 34px 74px',
+        'place': {'side': 'sidebar', 'ava': 'art', 'head': 'info', 'chat': 'lyrics', 'prog': 'progress', 'bar': 'player'}, 'resizable': ['side']}},
+}, css=r"""
+[data-part="background"] { background: #0f1115 !important; opacity: 1 !important; }
+.lay-area { background-color: #14171d !important; border-color: #20242d !important; box-shadow: none !important; }
+/* the header: the artist's avatar (the cover, round), the song as the contact's name, online while playing */
+.lay-art, .lay-info { border-radius: 0 !important; border-left: none !important; border-right: none !important; }
+.lay-art { display: grid; place-items: center; padding: 0 !important; }
+.lay-art img { width: 44px !important; height: 44px !important; min-width: 44px; flex: none; aspect-ratio: 1; border-radius: 50% !important; object-fit: cover; box-shadow: none !important; }
+.lay-art .art-part { display: grid; place-items: center; position: relative; }
+.lay-art .art-part::after { content: ""; position: absolute; right: calc(50% - 24px); bottom: calc(50% - 24px); width: 12px; height: 12px; border-radius: 50%;
+  background: #3ddc84; box-shadow: 0 0 0 3px #14171d; }
+[data-part="app"]:not([data-state~="playing"]) .lay-art .art-part::after { background: #6b7280; }
+.lay-info { display: flex; flex-direction: column; justify-content: center; align-items: flex-start !important; text-align: left !important; padding: 0 12px !important; }
+.lay-info .info-part { align-items: flex-start !important; text-align: left !important; padding: 0 !important; margin: 0 !important; gap: 0 !important; }
+.lay-info [data-part="info.title"] { font-size: 16px !important; font-weight: 650; margin: 0 !important; }
+.lay-info .song-actions, .lay-info [data-part="info.actions"] { display: none !important; }
+.lay-info::after { content: "online"; font-size: 12px; color: #3ddc84; }
+[data-part="app"]:not([data-state~="playing"]) .lay-info::after { content: "last seen just now"; color: var(--text-dim); }
+:root[data-phase="outro"] .lay-info::after { content: "typing…"; color: var(--accent); }
+/* the chat: every sung line is a bubble from the artist; lines not sung yet haven't been sent */
+.lay-lyrics { background: #0f1115 !important; }
+.lay-lyrics .lyrics { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 18px 22px 40px !important; text-align: left !important; mask-image: none !important; -webkit-mask-image: none !important; }
+.lay-lyrics [data-part="lyrics.line"] { max-width: min(78%, 560px); margin: 0 !important; padding: 8px 13px !important; border-radius: 18px 18px 18px 5px;
+  background: #222733; color: #e9edf3 !important; font-size: 15px !important; line-height: 1.35; transform: none !important; filter: none !important; opacity: 1 !important; cursor: pointer; }
+.lay-lyrics [data-part="lyrics.line"]:not([data-state]) { display: none; }
+.lyrics:not(.synced) [data-part="lyrics.line"] { display: block !important; }
+.lay-lyrics [data-part="lyrics.line"][data-state~="active"] { background: var(--accent); color: var(--on-accent) !important; animation: msg-in .28s cubic-bezier(.2, 1.4, .4, 1) both; }
+@keyframes msg-in { from { transform: translateY(10px) scale(.92) !important; opacity: 0; } }
+.reduce-motion .lay-lyrics [data-part="lyrics.line"] { animation: none !important; }
+.lay-lyrics [data-part="lyrics.line"] .rom, .lay-lyrics [data-part="lyrics.line"] .tr { display: block; font-size: 12px; opacity: .75; margin-top: 2px; }
+/* "typing…" dots at the bottom of the chat in the last seconds of the song */
+:root[data-phase="outro"] .lay-lyrics .lyrics::after { content: "• • •"; padding: 6px 14px; border-radius: 18px; background: #222733; color: #9aa3b2; letter-spacing: .1em; animation: typing 1.2s ease-in-out infinite; }
+@keyframes typing { 50% { opacity: .4; } }
+.lay-lyrics .lyrics-src { align-self: center; font-size: 11px; opacity: .6; order: 2; }
+.lay-lyrics .lyrics.center, .lay-lyrics .center.dim { align-self: flex-start; margin: 18px 22px; padding: 8px 13px; border-radius: 18px 18px 18px 5px; background: #222733; font-style: italic; }
+/* the chat list: round avatars, the artist as the last message */
+.lay-sidebar [data-part="tracklist.row"] img, .lay-sidebar [data-part="tracklist.row"] .art { border-radius: 50% !important; }
+.lay-sidebar [data-part="tracklist.row"][data-state~="active"] { background: color-mix(in srgb, var(--accent) 16%, transparent) !important; box-shadow: none !important; }
+/* the player as the message box */
+.lay-player { border-radius: 0 !important; border-left: none !important; border-right: none !important; border-bottom: none !important; }
+.lay-progress { border-radius: 0 !important; border-left: none !important; border-right: none !important; }
+[data-part="player.button.play"] { border-radius: 50% !important; }
+""", files={'CREDITS.md': credits(['Made for Voltage, CC0. An original chat look: no other app\'s colours, logo or layout.'])})

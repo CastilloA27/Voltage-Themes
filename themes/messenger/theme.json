@@ -1,0 +1,64 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "messenger",
+  "name": "Messenger",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "minVoltage": "1.7.2",
+  "description": "The song as a chat with the artist: lyrics arrive as message bubbles while they are sung (click one to jump there), \"typing…\" before the next song, the queue as your chat list and the player as the message box.",
+  "tokens": {
+    "color.bg": "#0f1115",
+    "color.text": "#eef1f6",
+    "color.text-dim": "#9aa3b2",
+    "color.surface": "#171a21",
+    "color.border": "#252a34",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0.6",
+    "shape.radius": "16px"
+  },
+  "supports": {
+    "background": [
+      "black"
+    ]
+  },
+  "strings": {
+    "tab.queue": "Chats",
+    "tab.search": "Find",
+    "tab.library": "Saved",
+    "nowplaying.idle": "No new messages",
+    "lyrics.loading": "{artist} is typing…",
+    "lyrics.none": "{artist} sent a song without words",
+    "lyrics.instrumental": "{artist} sent a voice message",
+    "player.next": "Next chat",
+    "player.prev": "Previous chat",
+    "empty.queue": "No chats yet"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "side ava head",
+        "side chat chat",
+        "side prog prog",
+        "side bar bar"
+      ],
+      "columns": "minmax(240px, 300px) 64px minmax(0, 1fr)",
+      "rows": "64px minmax(0, 1fr) 34px 74px",
+      "place": {
+        "side": "sidebar",
+        "ava": "art",
+        "head": "info",
+        "chat": "lyrics",
+        "prog": "progress",
+        "bar": "player"
+      },
+      "resizable": [
+        "side"
+      ]
+    }
+  },
+  "css": "theme.css"
+}
