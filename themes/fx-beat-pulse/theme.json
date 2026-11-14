@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "fx-beat-pulse",
+  "name": "Beat pulse",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "kind": "effect",
+  "description": "The window's edge glows with the beat (at most 3 pulses a second, softer with Reduce flashing).",
+  "overlay": true,
+  "uses": [
+    "beat"
+  ],
+  "css": "theme.css"
+}

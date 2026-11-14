@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "fx-grain",
+  "name": "Film grain",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "kind": "effect",
+  "description": "A soft film grain and vignette over any theme. Still (no animation): costs almost nothing.",
+  "overlay": true,
+  "css": "theme.css"
+}

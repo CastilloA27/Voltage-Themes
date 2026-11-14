@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "fx-snow",
+  "name": "Snow",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "kind": "effect",
+  "description": "Slow snowfall over any theme. Pauses with the music.",
+  "overlay": true,
+  "css": "theme.css"
+}
