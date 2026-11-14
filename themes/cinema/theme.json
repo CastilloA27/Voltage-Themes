@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/CastilloA27/Voltage-Plugins/main/themes/theme.schema.json",
+  "id": "cinema",
+  "name": "Cinema",
+  "version": "1.0.0",
+  "author": "Voltage",
+  "extends": "voltage",
+  "appearance": "dark",
+  "minVoltage": "1.7.2",
+  "description": "A cinema: the cover (or the music video) on a big screen between black bars, the lyrics as subtitles, a title card when a song starts and THE END when it finishes; pages fade through black.",
+  "fonts": [
+    {
+      "family": "DM Serif Display",
+      "src": "assets/dmserif/DMSerifDisplay-Regular.ttf"
+    }
+  ],
+  "transitions": "view",
+  "tokens": {
+    "color.bg": "#000000",
+    "color.text": "#f3efe6",
+    "color.text-dim": "#a8a296",
+    "color.surface": "rgba(12, 11, 10, .86)",
+    "color.border": "#1d1b18",
+    "color.brand": "#d9b26a",
+    "color.on-accent": "#120f08",
+    "effect.blur": "0px",
+    "effect.glow-size": "0px",
+    "effect.glow-alpha": "0%",
+    "accent.album-mix": "0",
+    "shape.radius": "2px"
+  },
+  "accent": {
+    "mode": "fixed",
+    "color": "#d9b26a"
+  },
+  "supports": {
+    "background": [
+      "video",
+      "cover",
+      "black"
+    ]
+  },
+  "strings": {
+    "tab.queue": "Program",
+    "tab.search": "Box office",
+    "nowplaying.idle": "Intermission",
+    "player.next": "Next feature",
+    "player.prev": "Previous feature",
+    "lyrics.none": "No subtitles",
+    "lyrics.instrumental": "[ instrumental ]",
+    "lyrics.loading": "…"
+  },
+  "layout": {
+    "home": {
+      "areas": [
+        "info side",
+        "screen side",
+        "subs side",
+        "prog prog",
+        "bar bar"
+      ],
+      "columns": "minmax(0, 1fr) minmax(220px, 290px)",
+      "rows": "auto minmax(0, 1fr) 76px 36px 72px",
+      "place": {
+        "info": "info",
+        "screen": "art",
+        "subs": "lyrics",
+        "side": "sidebar",
+        "prog": "progress",
+        "bar": "player"
+      },
+      "resizable": [
+        "side"
+      ]
+    }
+  },
+  "css": "theme.css"
+}

@@ -212,3 +212,62 @@ write('messenger', {
 .lay-progress { border-radius: 0 !important; border-left: none !important; border-right: none !important; }
 [data-part="player.button.play"] { border-radius: 50% !important; }
 """, files={'CREDITS.md': credits(['Made for Voltage, CC0. An original chat look: no other app\'s colours, logo or layout.'])})
+
+# ── Cinema: F3 phases (a title card for the first seconds, THE END in the last ones), the music video behind the screen when a
+#    song has one, lyrics as subtitles, F9 (page changes fade through black with the View Transitions API). ──
+write('cinema', {
+    'id': 'cinema', 'name': 'Cinema', 'version': '1.0.0', 'author': 'Voltage', 'extends': 'voltage', 'appearance': 'dark', 'minVoltage': '1.7.2',
+    'description': 'A cinema: the cover (or the music video) on a big screen between black bars, the lyrics as subtitles, a title card '
+                   'when a song starts and THE END when it finishes; pages fade through black.',
+    'fonts': [{'family': 'DM Serif Display', 'src': 'assets/dmserif/DMSerifDisplay-Regular.ttf'}],
+    'transitions': 'view',
+    'tokens': {'color.bg': '#000000', 'color.text': '#f3efe6', 'color.text-dim': '#a8a296', 'color.surface': 'rgba(12, 11, 10, .86)', 'color.border': '#1d1b18',
+               'color.brand': '#d9b26a', 'color.on-accent': '#120f08', 'effect.blur': '0px', 'effect.glow-size': '0px', 'effect.glow-alpha': '0%',
+               'accent.album-mix': '0', 'shape.radius': '2px'},
+    'accent': {'mode': 'fixed', 'color': '#d9b26a'},
+    'supports': {'background': ['video', 'cover', 'black']},
+    'strings': {'tab.queue': 'Program', 'tab.search': 'Box office', 'nowplaying.idle': 'Intermission', 'player.next': 'Next feature',
+                'player.prev': 'Previous feature', 'lyrics.none': 'No subtitles', 'lyrics.instrumental': '[ instrumental ]', 'lyrics.loading': '…'},
+    'layout': {'home': {
+        'areas': ['info side', 'screen side', 'subs side', 'prog prog', 'bar bar'],
+        'columns': 'minmax(0, 1fr) minmax(220px, 290px)', 'rows': 'auto minmax(0, 1fr) 76px 36px 72px',
+        'place': {'info': 'info', 'screen': 'art', 'subs': 'lyrics', 'side': 'sidebar', 'prog': 'progress', 'bar': 'player'}, 'resizable': ['side']}},
+}, css=r"""
+.lay-area { background-color: rgb(0 0 0 / .78) !important; border-color: #15130f !important; box-shadow: none !important; }
+/* the room: dark, lit only a little by the screen (the cover or the music video behind, dimmed) */
+.bg-cover, .bg-video { filter: blur(50px) brightness(.22) saturate(1.3) !important; }
+.bg-cover-shade { background: rgb(0 0 0 / .45) !important; }
+/* the marquee line over the screen; a title card for the first seconds of a song (F3 phase "intro") */
+.lay-info { background: #000 !important; border: none !important; text-align: center; display: grid; justify-items: center; padding: 8px 12px !important; }
+.lay-info .info-part { align-items: center !important; }
+.lay-info::before { content: "NOW SHOWING"; font-size: 10px; letter-spacing: .5em; color: var(--accent); margin-bottom: 2px; }
+.lay-info [data-part="info.title"] { font: 400 22px/1.2 "DM Serif Display", Georgia, serif; letter-spacing: .02em; transition: font-size .8s ease, letter-spacing .8s ease; }
+:root[data-phase="intro"] .lay-info [data-part="info.title"] { font-size: clamp(28px, 4.4vw, 46px); letter-spacing: .08em; animation: card-in 1.6s ease both; }
+@keyframes card-in { from { opacity: 0; letter-spacing: .3em; } }
+.lay-info .song-actions, .lay-info [data-part="info.actions"] { display: none !important; }
+/* the screen: black bars above and below, the cover (or the video) in the middle */
+.lay-art { background: #000 !important; border: none !important; border-radius: 0 !important; display: grid; place-items: center; overflow: hidden; container-type: size; position: relative;
+  box-shadow: inset 0 18px 0 #000, inset 0 -18px 0 #000 !important; }
+.lay-art .art-part { display: grid; place-items: center; width: 100%; height: 100%; min-height: 0; }
+.lay-art img, .lay-art video { width: min(100cqw, calc(100cqh * 16 / 9)) !important; height: min(100cqh, calc(100cqw * 9 / 16)) !important; object-fit: cover; border-radius: 0 !important; box-shadow: none !important; }
+/* THE END for the last seconds (F3 phase "outro") */
+.lay-art::after { content: "THE END"; position: absolute; inset: 0; display: grid; place-items: center; font: 400 clamp(26px, 5vw, 54px) "DM Serif Display", Georgia, serif;
+  letter-spacing: .12em; color: #f3efe6; background: rgb(0 0 0 / .72); opacity: 0; transition: opacity 1.4s ease; pointer-events: none; }
+:root[data-phase="outro"] .lay-art::after { opacity: 1; }
+/* subtitles: only the line being sung, white with a black edge */
+.lay-lyrics { background: #000 !important; border: none !important; border-radius: 0 !important; }
+.lay-lyrics .lyrics { display: grid; place-items: center; height: 100%; padding: 0 16px !important; mask-image: none !important; -webkit-mask-image: none !important; overflow: hidden !important; }
+.lay-lyrics [data-part="lyrics.line"] { display: none; }
+.lay-lyrics [data-part="lyrics.line"][data-state~="active"] { display: block; margin: 0 !important; font: 500 19px/1.3 system-ui, sans-serif !important; color: #fff !important; text-align: center;
+  text-shadow: 0 0 3px #000, 0 2px 2px #000; transform: none !important; filter: none !important; opacity: 1 !important; }
+.lay-lyrics .lyrics:not(.synced) [data-part="lyrics.line"] { display: none !important; }
+.lay-lyrics .lyrics-src, .lay-lyrics .ly-offset { display: none !important; }
+.lay-lyrics .center.dim { font-style: italic; color: #8a8478; }
+/* F9: page changes fade through black */
+::view-transition-old(root) { animation: vt-out .25s ease both; }
+::view-transition-new(root) { animation: vt-in .35s ease .2s both; }
+@keyframes vt-out { to { opacity: 0; } }
+@keyframes vt-in { from { opacity: 0; } }
+[data-part="player.button.play"] { background: var(--accent) !important; color: #120f08 !important; }
+""", files={**ofl('dmserif', 'DMSerifDisplay-Regular.ttf'),
+            'CREDITS.md': credits(['Font: DM Serif Display by Colophon Foundry, SIL Open Font License 1.1 (assets/dmserif/OFL.txt).', 'Everything else: made for Voltage, CC0.'])})
