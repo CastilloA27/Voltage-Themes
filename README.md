@@ -1,8 +1,8 @@
 # Voltage themes
 
-The theme store of [Voltage](https://github.com/CastilloA27/Voltage-Releases): every folder in `themes/` is a theme package
-(see THEMING.md in Voltage-Plugins for how to make one), and `catalog.json` is what Voltage's **Settings > Appearance > Theme
-store** reads. Themes contain no code; Voltage checks every file again when it installs one.
+The theme store of Voltage, the YouTube Music desktop client for Windows: every folder in `themes/` is a theme package
+(how to make one: [THEMING.md](https://github.com/CastilloA27/Voltage-Plugins/blob/main/THEMING.md) in Voltage-Plugins), and
+`catalog.json` is what Voltage's **Settings > Theme store** reads. Themes contain no code; Voltage checks every file again when it installs one.
 
 ## How it works
 
@@ -44,14 +44,17 @@ store** reads. Themes contain no code; Voltage checks every file again when it i
 | JRPG | a turn-based battle: the song is the enemy, HP is the time left, FIGHT / ITEM / RUN / MAGIC; seeking hits for damage and you level up (**JRPG battle** plugin) | party / enemy / text box / menu |
 | Word Rain | every sung word falls behind the player and piles up (**Word rain** plugin) | a quiet stage |
 | Jackpot 3 | Jackpot with a lever that skips, coins on a winning line, bulbs on the beat, 5 or 3 reels (the **Reels** plugin) | the cabinet |
+| **Effect packs** (`"kind": "effect"`: they stack on whatever theme is on, up to 6 at once) | | |
+| Snow, Film grain, Beat pulse | snowfall over the window, a film-grain overlay, the window edge glowing with the beat (softer with Reduce flashing) | none of their own |
 
 Theme sources that aren't copies of Voltage-Plugins' examples are made by `tools/make-store.py`.
 
 ## Adding a theme
 
 1. A pull request adds `themes/<id>/` (the folder name is the theme's `id`) and `previews/<id>-1.png` (+ `-2.png`), 1280 x 800,
-   made with Voltage's demo library (`voltage --demo`, `tools/theme-previews.mjs`): never a picture of a real library.
-2. It must pass `node tools/theme-check.mjs themes/<id> --strict` (in the Voltage repo).
+   made with Voltage's demo library (start Voltage with `--demo`: made-up songs and covers): never a picture of a real library.
+2. It must pass `node sdk/theme-check.mjs themes/<id> --strict` (the checker is one file in
+   [Voltage-Plugins](https://github.com/CastilloA27/Voltage-Plugins): `sdk/theme-check.mjs`; Node 18+).
 3. Licences: fonts under the SIL OFL (with their `OFL.txt` in the package), art and sounds CC0, CC BY (credited) or made for the
    theme, all listed in the theme's `CREDITS.md`.
 4. **No characters, logos or brands of other companies**, and nothing that imitates gambling with money (a slot-machine *look*
